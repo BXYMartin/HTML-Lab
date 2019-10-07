@@ -446,6 +446,15 @@ p.stats-info {
     margin: 0 auto;
     padding: 35px 0;
 }
+.cruise-w3-agile h1 {
+    color: #fff;
+    font-size:25px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 4px;
+    margin: auto;
+    padding: 25px 0;
+}
 label.cru {
     background: #B3D9D9;
     width: 180px;
@@ -467,7 +476,10 @@ label.cru {
     left: 35%;
     border: 8px solid #fff;
     padding: 21px;
-    background: #012b52;
+    background: url(../images/s6.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    min-height:400px;
+    min-width:28%;
 }
 .w3-services-pos img {
     width: 100%;
