@@ -141,7 +141,8 @@ display: block;
 		top: -115%;
 	}
 	.flex-control-nav {
-    top: 148%;
+        top: 148%;
+        left: 43%;
     }
 }
 @media screen and (max-width: 991px){
@@ -172,7 +173,7 @@ display: block;
 }
 @media screen and (max-width: 768px){
 .flex-control-nav {
-    right: 2%;
+    left: 39%;
     top: 100%;
 }
 .flex-control-nav li {
