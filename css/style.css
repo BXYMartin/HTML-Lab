@@ -478,8 +478,8 @@ label.cru {
     padding: 21px;
     background: url(../images/s6.jpg) no-repeat 0px 0px;
     background-size: cover;
-    min-height:400px;
     min-width:28%;
+    min-height: 200px;
 }
 .w3-services-pos img {
     width: 100%;
@@ -1259,6 +1259,9 @@ option{
 .w3-services-pos {
     bottom: 44%;
     left: 36%;
+}
+.cruise-w3-small {
+    display: none;
 }
 .gal-w3l {
     padding-left: 5px!important;
