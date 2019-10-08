@@ -78,7 +78,7 @@ html[xmlns] .slides {display: block;}
 .flex-control-nav {
 display: block;
     position: absolute;
-    left: 41%;
+    left: 43%;
     margin-left: 0px;
     top: 136%;
 }
@@ -129,6 +129,24 @@ display: block;
 .flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
 .flex-control-thumbs img:hover {opacity: 1;}
 .flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
+@media screen {
+	.flex-control-nav {
+        top: 148%;
+        left: 47%;
+    }
+}
+@media screen and (max-width:1920px) {
+	.flex-control-nav {
+        top: 148%;
+        left: 46%;
+    }
+}
+@media screen and (max-width:1440px) {
+	.flex-control-nav {
+        top: 148%;
+        left: 45%;
+    }
+}
 @media screen and (max-width:1080px) {
 	.flex-control-nav {
 		top: 0%;
@@ -166,6 +184,7 @@ display: block;
 }
 .flex-control-nav {
     top: 141%;
+    left: 41%;
 }
 .flex-control-nav li:first-child:before {
     left: 7.5%;
