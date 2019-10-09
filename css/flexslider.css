@@ -184,7 +184,7 @@ display: block;
 }
 .flex-control-nav {
     top: 141%;
-    left: 41%;
+    left: 42%;
 }
 .flex-control-nav li:first-child:before {
     left: 7.5%;
@@ -192,8 +192,8 @@ display: block;
 }
 @media screen and (max-width: 768px){
 .flex-control-nav {
-    left: 39%;
-    top: 100%;
+    left: 41%;
+    top: 120%;
 }
 .flex-control-nav li {
     margin: 8px 0;
@@ -202,7 +202,7 @@ display: block;
 @media screen and (max-width: 667px){
 .flex-control-nav {
     right: 2%;
-    left: 38%;
+    left: 37%;
     top: 100%;
 }
 .flex-control-nav li:first-child:before {
@@ -272,7 +272,7 @@ display: block;
 }
 .flex-control-nav {
     top: 130%;
-    left: 38%;
+    left: 36%;
 }
 .flex-control-nav li:first-child:before {
     left: 3.5%;
