@@ -33,6 +33,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <script src='js/TweenMax.min.js'></script>
 <script  src="js/index.js"></script>
+<!-- news -->
+<div id="passes-container" class="passes-container">
+    <ul id="passes" class="passes">
+        <li class="easyjet">
+            <div>
+                News - Studies
+            </div>
+        </li>
+        <li class="airberlin">
+            <div>
+                News - Conferences
+            </div>
+        </li>
+        <li class="ba">
+            <div>
+                News - Invitations
+            </div>
+        </li>
+    </ul>
+</div>
 <!-- banner -->
 	<div class="banner jarallax" id="home" style="background: url(./images/ban44.jpg) no-repeat 0px 0px;">
 	<div class="agile_dot_info one">
@@ -819,7 +839,6 @@ function pub_switch() {
         document.getElementById("show_more").text = language_map[language_code]["show_more"];
     }
     for(var pub = 0; pub < widgets.length; pub = pub + 1) {
-        console.log(pub);
         if(show_more == 1) {
             widgets[pub].style.display = "grid";
         }
@@ -829,6 +848,46 @@ function pub_switch() {
         i = i + 1;
     }
 }
+var passes = document.getElementById('passes');
+var lis = passes.querySelectorAll('li');
+for (var i = 0; i < lis.length; i++) {
+    lis[i].addEventListener('click', function(e) {
+        var current = passes.querySelector('.current');
+        if (current) {
+            current.classList.remove('current');
+        } else {
+            e.target.classList.add('current');
+        }
+
+        positionPasses(10);
+    });
+}
+
+function positionPasses(ratio) {
+    var currentPassed = false;
+    var hasCurrent = passes.querySelector('.current') ? true : false;
+    for (var i = 0; i < lis.length; i++) {
+        var order = i;
+        if (lis[i].classList.contains('current')) currentPassed = true;
+
+        if (!currentPassed) order += 1;
+
+        var offset = (order - 1) * 4 * (100 / ratio) + 39 * ratio;
+        if (hasCurrent) {
+            offset = 390 + (order + 1) * 39;
+        }
+        console.log(hasCurrent, i, order, offset);
+        //lis[i].innerHTML = offset + '/' + i + '/' + hasCurrent;
+        lis[i].style.webkitTransform = 'translate3d(0, {offset}px, 0)'.replace('{offset}', offset);
+    }
+}
+
+positionPasses(10);
+
+$(window).scroll(function() {
+    let scroll = $(this).scrollTop();
+    positionPasses(10 + scroll / 500);
+});
 </script>
 
 
