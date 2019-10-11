@@ -1090,6 +1090,17 @@ option{
 	letter-spacing: 2px;
 }
 
+.botttom-nav-agileits {
+    width: 100%;
+}
+
+
+@media(min-width:992px){
+.botttom-nav-agileits {
+    width: 70%;   
+}
+}
+
 .botttom-nav-agileits ul.nav-w3ls {
 	text-align: center;
 	margin-top: 5px;
