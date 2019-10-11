@@ -839,6 +839,7 @@ for (var i = 0; i < lis.length; i++) {
         }
 
         positionPasses(10);
+        e.target.style.opacity = 1;
     });
 }
 
@@ -857,6 +858,7 @@ function positionPasses(ratio) {
         }
         //lis[i].innerHTML = offset + '/' + i + '/' + hasCurrent;
         lis[i].style.webkitTransform = 'translate3d(0, {offset}px, 0)'.replace('{offset}', offset);
+        lis[i].style.opacity = 0.7;
     }
 }
 
