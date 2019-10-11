@@ -473,7 +473,6 @@ p.stats-info {
     -moz-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
-    min-height:400px;
 	padding: 0;
 }
 .cruise-w3-agile-right {
@@ -492,7 +491,6 @@ p.stats-info {
     -moz-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
-    min-height:400px;
 	padding: 0;
 }
 .cruise-w3-agile-right-1 {
@@ -502,7 +500,6 @@ p.stats-info {
     -moz-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
-    min-height:400px;
 	padding: 0;
 }
 .cruise-w3-agile h3 {
@@ -1413,7 +1410,7 @@ option{
 div#bs-example-navbar-collapse-1 {
     position: absolute;
     width: 80%;
-    background: #000000ba;
+    background: #000000fe;
     text-align: center;
     z-index: 99;
 }
