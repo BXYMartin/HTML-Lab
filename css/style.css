@@ -2,6 +2,9 @@
     width: 33.33%;
     float: left;
 }
+.agile_team_grid .hori_3 {
+    height: 200px;
+}
 .icon-bar {
     background-color: #fff !important;
 }
@@ -9,9 +12,6 @@
     width: 32%; 
     position: absolute !important;
     top: 2%;
-}
-.img-responsive {
-    width: 100%;
 }
 .passes-container {
     pointer-events:none;
@@ -681,7 +681,7 @@ label.cru {
 	border:1px solid #3b5998;
 	background:#3b5998;
 }
-.w3_twitter:hover{
+.globe_website:hover{
 	border:1px solid #1da1f2;
 	background:#1da1f2;
 }
