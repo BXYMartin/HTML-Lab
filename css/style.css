@@ -1248,6 +1248,12 @@ option{
 }/*-- //top --*/
 
 
+@media screen and (min-width: 1080px){
+.hovereffect1 .social_agileinfo {
+    padding: 3.5em 2em 0em;
+}
+}
+
 /*-- /responsive design --*/
 @media(max-width:1440px){
 .w3_agile_banner_info {
