@@ -123,6 +123,7 @@ a:focus{
 .contentwidget {
     float: right;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 @media screen and (min-width: 768px){
@@ -649,7 +650,7 @@ label.cru {
     transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
     font-weight: normal;
     margin: 0;
-    padding: 1em 2em 0em;
+    padding: 5em 2em 0em;
 }
 
 .hovereffect1:hover .social_agileinfo{
@@ -1302,7 +1303,7 @@ option{
 }
 @media(max-width:1024px){
 .hovereffect1 h4 {
-    margin: 60px auto;
+    margin: -10px auto;
 }
 .agile_map_grid {
     width: 47%;
@@ -1387,6 +1388,9 @@ option{
 }
 .hovereffect1 h4 {
     width: 76%;
+}
+.hovereffect1 .social_agileinfo {
+    padding: 4.5em 0.7em 0em;
 }
 .copy h2 {
     float: none;
@@ -1517,6 +1521,12 @@ p.stats-info {
 }
 }
 @media(max-width:667px){
+.hovereffect1 h4 {
+    margin: -40px auto;
+}
+.hovereffect1 .social_agileinfo {
+    padding: 7em 0.7em 0em;
+} 
 .w3-contact-pos img {
     width: 78%;
 }
@@ -1618,7 +1628,10 @@ p.stats-info {
     margin: 30px auto;
 }
 .hovereffect1 .social_agileinfo{
-    padding: 3em 1em 0em;
+    padding: 3em 1.5em 0em;
+}
+.agile_team_grid .hori_3 {
+    width: 100%;
 }
 .w3_agile_banner_info h3 {
     font-size: 3em;
