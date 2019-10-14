@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>PRIME Homepage</title>
+<title>Student's Homepage</title>
 <!-- custom-theme -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //custom-theme -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
-<link rel="stylesheet" href="css/swipebox.css">
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" property="" />
+<link rel="stylesheet" href="../css/swipebox.css">
 <!-- font-awesome-icons -->
-<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link rel="stylesheet" href="../css/font-awesome.min.css" />
 </head>
 	
 <body>
@@ -29,83 +29,35 @@
 
 </svg>
 </div>
-<script src='js/TweenMax.min.js'></script>
-<script  src="js/index.js"></script>
-<!-- news -->
-<div id="passes-container" class="passes-container">
-    <ul id="passes" class="passes">
-        <li class="easyjet">
-            <div>
-                News - Studies
-            </div>
-        </li>
-        <li class="airberlin">
-            <div>
-                News - Conferences
-            </div>
-        </li>
-        <li class="ba">
-            <div>
-                News - Invitations
-            </div>
-        </li>
-    </ul>
-</div>
+<script src='../js/TweenMax.min.js'></script>
+<script  src="../js/index.js"></script>
 <!-- banner -->
-	<div class="banner jarallax" id="home" style="background: url(./images/ban44.jpg) no-repeat 0px 0px;">
+	<div class="banner jarallax" id="home" style="background-color: #444; min-height: auto;">
 	<div class="agile_dot_info one">
 		<div class="container" style="width: 100%;">
-			<nav class="navbar navbar-default">
+			<nav class="navbar navbar-default" style="padding: 0.5em 0 0 0;">
 				<div class="navbar-header navbar-left">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<button type="button" class="navbar-toggle collapsed" style="margin: 0.3em 0 0 0;" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<h1><a class="navbar-brand" href="index.html" style="margin-bottom: 15px;">P R I M E</a></h1>
+					<h1><a class="navbar-brand" href="../index.html">P R I M E</a></h1>
 				</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav class="link-effect-8" id="link-effect-8">
 						<ul class="nav navbar-nav">
-							<li class="active"><a class="main" href="index.html" data-lang="home">Home</a></li>
-							<li><a href="#about" class="main scroll" data-lang="about">About</a></li>
-							<li><a href="#services"  class="main scroll" data-lang="research">Research</a></li>
-							<li><a href="#gallery"  class="main scroll" data-lang="partners">Partners</a></li>
-                            <li><a href="#team"  class="main scroll" data-lang="team">Team</a></li>
-							<li><a href="#contact"  class="main scroll" data-lang="contact">Contact</a></li>
-							<li><a id="J_lang_switch" class="main" data-lang="change_language">切换至中文</a> </li>
+							<li class="active"><a href="../index.html" data-lang="home">Home</a></li>
+							<li><a href="#about" class="scroll" data-lang="about">About</a></li>
+							<li><a href="#services"  class="scroll" data-lang="research">Research</a></li>
+							<li><a href="#contact"  class="scroll" data-lang="contact">Contact</a></li>
+							<li><a id="J_lang_switch" data-lang="change_language">切换至中文</a> </li>
 						</ul>
 					</nav>
 				</div>
 			</nav>
-			<div class="w3_agile_banner_info">
-				<section class="slider">
-						<div class="flexslider">
-							<ul class="slides">
-								<li>
-									<div class="agileits_w3layouts_banner_info">
-										<p data-lang="banner_1_1">We focus on</p>
-										<h3 data-lang="banner_1_2">Material Science</h3>
-									</div>
-								</li>
-								<li>
-									<div class="agileits_w3layouts_banner_info">
-										<p data-lang="banner_2_1">We study</p>
-										<h3 data-lang="banner_2_2">Energy Profile</h3>
-									</div>
-								</li>
-								<li>
-									<div class="agileits_w3layouts_banner_info">
-										<p data-lang="banner_3_1">We simulate</p>
-										<h3 data-lang="banner_3_2">Flow Dynamics</h3>
-									</div>
-								</li>
-							</ul>
-						</div>
-				</section>
-			</div>
 		</div>
 	</div>
 	</div>
@@ -135,7 +87,7 @@
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 					<h4 style="color:#000" data-lang="prof_title">Prof. Peng Wang</h4>
-					<img src="images/Intro.jpg" alt=" " class="img-responsive" style="width:30%;float:left;">
+					<img src="../images/Intro.jpg" alt=" " class="img-responsive" style="width:30%;float:left;">
 					<div style="margin-left: 30%; padding-left: 20px;">
 						<h5 data-lang="about_me">About Me</h5>
 						<p data-lang="full_intro">I am computational mathematician working on uncertainty quantification. We combines mathematical theory and state-of-the-art computational tools to solve scientific and engineering problems with domain scientists.</p>
@@ -185,35 +137,6 @@
 		</div>
 	</div>
 	<!-- //Modal2 -->
-
-	<!-- Stats -->
-		<div class="stats">
-			<div class="container">
-				<div class="stats-info-1" style="border-radius: 15px;">
-					<div class="col-md-4 col-sm-4 stats-grid slideanim stats-grid1">
-					   <i class="fa fa-user" aria-hidden="true"></i>
-					
-						<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='10' data-delay='.5' data-increment="1">10</div>
-						<p class="stats-info" data-lang="partners">Partners</p>
-					</div>
-					<div class="col-md-4 col-sm-4 stats-grid slideanim stats-grid1">
-						<i class="fa fa-file" aria-hidden="true"></i>
-						<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='210' data-delay='.5' data-increment="5">210</div>
-						<p class="stats-info" data-lang="projects">Projects</p>
-					</div>
-					<div class="col-md-4 col-sm-4 stats-grid slideanim stats-grid1">
-					<i class="fa fa-pencil-square" aria-hidden="true"></i>
-					
-						<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='4' data-delay='.5' data-increment="1">4</div>
-						<p class="stats-info" data-lang="subjects">Subjects</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				
-			</div>
-		</div>
-		<!-- //Stats -->
-
 <!-- //welcome -->
 <!-- cruise -->
 <div class="w3-services" id="services">
@@ -250,36 +173,9 @@
 				Our goal is to develop mathematical tools to quantify uncertainty in nature, engineering systems and our society, and thus provide more accurate and comprehensive predictions of these system states. Applications of our work include environmental protection (flood prediction), ecology (algae blooms), oil recovery and renewable energy systems.
 			</p>
 		</div>
-		<div class="agileits_w3layouts_more">
-			<a href="#" data-toggle="modal" data-target="#myModal3" style="margin: 10px;" data-lang="funding_info">Funding Info</a>
-		</div>
 	</div>
 	</div>
 <!-- //cruise -->
-<!-- Modal3 -->
-<div class="modal fade" id="myModal3" tabindex="-1" role="dialog">
-<!-- Modal3 -->
-	<div class="modal-dialog">
-	<!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
-				<h4 style="color:#000" data-lang="fundings">Fundings</h4>
-				<div style="padding: 20px;">
-					<h5 data-lang="details">Details</h5>
-					<p>
-						<span class="wrapper">2017-2021</span> (Co-PI) State Key Research Project, Material Genome Initiative (16,125,000 RMB) —— National Ministry of Science and Technology, China<br>
-						<span class="wrapper">2016-2019</span> (PI) General Project, PDF/CDF methods and its numerical scheme for parametric uncertainty quantification (534,000 RMB) —— National Committee of Natural Science Research, China<br>
-						<span class="wrapper">2015-2018</span> (PI) Recruitment Program of Global Experts (2,000,000 RMB) —— Organization Department of CPC<br>
-						<span class="wrapper">2017-2020</span> (Co-PI) General Project, Uncertainty quantification and diagnosis for software faults (620,000 RMB) —— National Committee of Natural Science Research, China<br>
-					</p>
-					<br>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- //Modal3 -->
 <!-- cruise -->
 <div class="w3-services" id="publications">
 	<div class="container">
@@ -549,82 +445,6 @@
 	</div>
 </div>
 <!-- //cruise -->
-<!-- gallery --> 
-	<div id="gallery" class="gallery">
-		<div class="container">
-			<div class="w3-head-center">
-		<h3 data-lang="partners">Partners</h3>
-	</div>
-			<div class="gallery_gds">
-				<div class="col-md-4 gal-w3l">
-						<div class="agileits-img">
-							<a href="images/g1.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
-								<img class="img-responsive img-style row2" src="images/g1.jpg" alt=""  /> 
-							</a> 
-						</div>
-					</div>
-					<div class="col-md-4 gal-w3l">
-						<div class="agileits-img">
-							<a href="images/g2.jpg" class="swipebox" title="Duis maximus tortor diam, ac lobortis justo rutrum quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non purus fermentum, eleifend velit non">
-								<img src="images/g2.jpg" alt="" class="img-responsive img-style row2" />
-							</a>	
-						</div>
-					</div>
-					<div class="col-md-4 gal-w3l">
-						<div class="agileits-img">
-							<a href="images/g3.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
-								<img src="images/g3.jpg" alt="" class="img-responsive img-style row2" />
-							</a>	
-						</div>
-					</div>
-				   <div class="clearfix"> </div>
-				</div>
-			</div>
-		</div>    
-<!-- //gallery -->
-
-<!-- team -->
-	<div class="team" id="team">
-		<div class="container">
-	<div class="w3-head-left">
-		<h3 data-lang="team">Team</h3>
-	</div>
-		<div class="col-md-12 agile_team_grid">	
-			<ul id="flexiselDemo1">	
-				<li>
-					<div class="hovereffect1 w3ls_banner_bottom_grid">
-						<img src="images/m1.jpg" alt=" " class="img-responsive" />
-						<div class="overlay">
-							<h4 data-lang="crew_1">Someone</h4>
-							<ul class="social_agileinfo">
-								<li><a href="#" class="w3_facebook"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="details/template.html" class="w3_twitter"><i class="fa fa-globe"></i></a></li>
-								<li><a href="#" class="w3_instagram"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="#" class="w3_google"><i class="fa fa-qq"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="hovereffect1 w3ls_banner_bottom_grid">
-						<img src="images/m2.jpg" alt=" " class="img-responsive" />
-						<div class="overlay">
-							<h4 data-lang="crew_2">Someone Else</h4>
-							<ul class="social_agileinfo">
-								<li><a href="#" class="w3_facebook"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#" class="w3_twitter"><i class="fa fa-globe"></i></a></li>
-								<li><a href="#" class="w3_instagram"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="#" class="w3_google"><i class="fa fa-qq"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-		<div class="clearfix"></div>
-	</div>
-	</div>
-<!-- //team -->
 
 <!-- Footer -->
 	<div class="reach-wthree" id="contact">
@@ -647,8 +467,6 @@
 					<li><a href="#home" class="scroll" data-lang="home">Home</a></li>
 					<li><a href="#about"  class="scroll" data-lang="about">About</a></li>
 					<li><a href="#services" class="scroll" data-lang="research">Research</a></li>
-					<li><a href="#gallery"  class="scroll" data-lang="partners">Partners</a></li>
-					<li><a href="#team"  class="scroll" data-lang="team">Team</a></li>
 					<li><a href="#contact"  class="scroll" data-lang="contact">Contact</a></li>
 				</ul>
 			</div>
@@ -660,7 +478,7 @@
 	<!--Copy-right-->
 	<div class="copy">
 		<div class="container">
-			<h2><a href="index.html">P R I M E</a></h2>
+			<h2><a href="../index.html">P R I M E</a></h2>
 			<p style="padding: 10px;" data-lang="rights">© 2019 PRIME. All Rights Reserved</p>
 			<div class="clearfix"> </div>
 		</div>
@@ -668,106 +486,103 @@
 	<!--// Copy-right -->
 
 <!-- js -->
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
 <!-- //js -->
 <!-- for bootstrap working -->
-	<script src="js/bootstrap.js"></script>
+<script src="../js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
 <!-- flexSlider -->
-				<script defer src="js/jquery.flexslider.js"></script>
-				<script type="text/javascript">
-					$(window).load(function(){
-					  $('.flexslider').flexslider({
-						animation: "slide",
-						start: function(slider){
-						  $('body').removeClass('loading');
-						}
-					  });
-					});
-				</script>
-			<!-- //flexSlider -->
-	<!-- /numscroller -->		
-<script type="text/javascript" src="js/numscroller-1.0.js"></script>
-	<!-- //numscroller -->	
-				<!-- swipe box js -->
-	<script src="js/jquery.adipoli.min.js" type="text/javascript"></script>
-	<script type="text/javascript"> 
-		$(function(){ 
-			$('.row2').adipoli({
-				'startEffect' : 'overlay',
-				'hoverEffect' : 'sliceDown'
-			}); 
-		});
-		
-	</script>
-	<script src="js/jquery.swipebox.min.js"></script> 
-	<script type="text/javascript">
-			jQuery(function($) {
-				$(".swipebox").swipebox();
-			});
-	</script>
-	<!-- //swipe box js -->
+<script defer src="../js/jquery.flexslider.js"></script>
+<script type="text/javascript">
+    $(window).load(function(){
+        $('.flexslider').flexslider({
+            animation: "slide",
+            start: function(slider){
+                $('body').removeClass('loading');
+            }
+        });
+    });
+</script>
+<!-- //flexSlider -->
+<!-- /numscroller -->		
+<script type="text/javascript" src="../js/numscroller-1.0.js"></script>
+<!-- //numscroller -->	
+<!-- swipe box js -->
+<script src="../js/jquery.adipoli.min.js" type="text/javascript"></script>
+<script type="text/javascript"> 
+    $(function(){ 
+        $('.row2').adipoli({
+            'startEffect' : 'overlay',
+            'hoverEffect' : 'sliceDown'
+        }); 
+    });
+
+</script>
+<script src="../js/jquery.swipebox.min.js"></script> 
+<script type="text/javascript">
+    jQuery(function($) {
+        $(".swipebox").swipebox();
+    });
+</script>
+<!-- //swipe box js -->
 <!-- flexisel -->
-	<script type="text/javascript">
-			$(window).load(function() {
-				$("#flexiselDemo1").flexisel({
-					visibleItems: 3,
-					animationSpeed: 1000,
-					autoPlay:true,
-					autoPlaySpeed: 3000,    		
-					pauseOnHover: true,
-					enableResponsiveBreakpoints: true,
-					responsiveBreakpoints: { 
-						portrait: { 
-							changePoint:480,
-							visibleItems: 1
-						}, 
-						landscape: { 
-							changePoint:640,
-							visibleItems:2
-						},
-						tablet: { 
-							changePoint:768,
-							visibleItems: 2
-						}
-					}
-				});
-				
-			});
-	</script>
-	<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+<script type="text/javascript">
+    $(window).load(function() {
+        $("#flexiselDemo1").flexisel({
+            visibleItems: 3,
+            animationSpeed: 1000,
+            autoPlay:true,
+            autoPlaySpeed: 3000,    		
+            pauseOnHover: true,
+            enableResponsiveBreakpoints: true,
+            responsiveBreakpoints: { 
+                portrait: { 
+                    changePoint:480,
+                    visibleItems: 1
+                }, 
+                landscape: { 
+                    changePoint:640,
+                    visibleItems:2
+                },
+                tablet: { 
+                    changePoint:768,
+                    visibleItems: 2
+                }
+            }
+        });
+
+    });
+</script>
+<script type="text/javascript" src="../js/jquery.flexisel.js"></script>
 <!-- //flexisel -->
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<!-- here starts scrolling icon -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
-								
-			$().UItoTop({ easingType: 'easeOutQuart', scrollSpeed: 800 });
-								
-			});
-	</script>
+<script type="text/javascript" src="../js/move-top.js"></script>
+<script type="text/javascript" src="../js/easing.js"></script>
+<!-- here starts scrolling icon -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        /*
+                var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear' 
+                };
+         */
+
+        $().UItoTop({ easingType: 'easeOutQuart', scrollSpeed: 800 });
+
+    });
+</script>
 <!-- //here ends scrolling icon -->
 <script type="text/javascript">
     show_more = 1;
-	language_map = 
-	[
-		{'change_language': "切换至中文", 'page_title': "Wangpengroup Homepage", 'home': "Home", 'about': "About", 'research': "Research", 'partners': "Partners", 'contact': "Contact", 'team': "Team", 'prof_name': "Peng Wang (KOBY)", 'prof_title': "Prof. Peng Wang", 'about_me': "About Me", 'about_more': "Learn More", 'intro_1': "Professor of Mathematics, School of Mathematics and System Science, Beihang University", 'intro_2': "\“Thousand Talents Program\” Recipient", 'view_cv': "View My CV",
-            'full_intro': "I am computational mathematician working on uncertainty quantification. We combines mathematical theory and state-of-the-art computational tools to solve scientific and engineering problems with domain scientists.", "background": "Background", 'education': "Education", 'employment': "Employment", 'position': "Position", 'projects': "Projects", 'subjects': "Subjects", 'goal': "Our goal is to develop mathematical tools to quantify uncertainty in nature, engineering systems and our society, and thus provide more accurate and comprehensive predictions of these system states. Applications of our work include environmental protection (flood prediction), ecology (algae blooms), oil recovery and renewable energy systems.", 'funding_info': "Funding Info", 'fundings': "Fundings", 'details': "Details", 'publications': "Publications", "contact_info": "Contact Info", 'rights': "© 2019 Wangpengroup. All Rights Reserved", 'banner_1_1': "We focus on",
-            'banner_1_2': "Material Science", 'banner_2_1': "We study", 'banner_2_2': "Energy Profile", 'banner_3_1': "We simulate", 'banner_3_2': "Flow Dynamics", 'stochastic': "Stochastic", 'computation': "Computation", 'show_more': "Show More", 'show_less': "Show Less"},
-		{'change_language': "English Version", 'page_title': "王鹏教授的实验室主页", 'home': "主页", 'about': "关于", 'research': "科研", 'partners': "合作", 'contact': "联系我们", 'team': "成员", 'prof_name': "王鹏 教授", 'prof_title': "王鹏 教授", 'about_me': "关于我", 'about_more': "了解更多", 'intro_1': "北京航空航天大学 数学与系统科学学院 教授", 'intro_2': "中组部“青年千人计划”专家", 'view_cv': "查看我的简历", "full_intro":
-            "我是一名研究不确定性量化的计算数学学者。我们团队致力于结合数学理论与高效计算方法，与具体行业的科学家共同解决实际的自然和工程问题。我们的研究核心是开发数学工具以量化自然、工程和社会系统中的不确定性，进而对这些系统状态做出更准确与全面的预测。我们研究的具体应用包含环境保护（洪水预测）、生态平衡（水华爆发）、石油开采和新能源系统。", "background": "背景资料", 'education': "教育资料", 'employment': "工作经历", 'position': "其他任职", 'projects': "项目", 'subjects': "方向", 'goal':
-            "我们的研究核心是开发数学工具以量化自然、工程和社会系统中的不确定性，进而对这些系统状态做出更准确与全面的预测。我们研究的具体应用包含环境保护（洪水预测）、生态平衡（水华爆发）、石油开采和新能源系统。", 'funding_info': "经费详情", 'fundings': "经费", 'details': "详情", 'publications': "发表论文", "contact_info": "联系方式", 'rights': "© 2019 Wangpengroup. 保留所有权利", 'banner_1_1': "我们研究", 'banner_1_2': "材料科学", 'banner_2_1': "我们解决", 'banner_2_2': "能源问题",
-            'banner_3_1': "我们模拟", 'banner_3_2': "流体力学", 'stochastic': "随机", 'computation': "过程", 'show_more': "显示更多", 'show_less': "隐藏"}
-	];
+language_map = 
+    [
+        {'change_language': "切换至中文", 'page_title': "Wangpengroup Homepage", 'home': "Home", 'about': "About", 'research': "Research", 'partners': "Partners", 'contact': "Contact", 'team': "Team", 'about_me': "About Me", 'about_more': "Learn More", 'view_cv': "View My CV",
+            "background": "Background", 'education': "Education", 'employment': "Employment", 'position': "Position", 'projects': "Projects", 'subjects': "Subjects", 'goal': "Our goal is to develop mathematical tools to quantify uncertainty in nature, engineering systems and our society, and thus provide more accurate and comprehensive predictions of these system states. Applications of our work include environmental protection (flood prediction), ecology (algae blooms), oil recovery and renewable energy systems.", 'funding_info': "Funding Info", 'fundings': "Fundings", 'details': "Details", 'publications': "Publications", "contact_info": "Contact Info", 'rights': "© 2019 Wangpengroup. All Rights Reserved", 'show_more': "Show More", 'show_less': "Show Less"},
+        {'change_language': "English Version", 'page_title': "学生的个人主页", 'home': "主页", 'about': "关于", 'research': "科研", 'partners': "合作", 'contact': "联系我们", 'team': "成员", 'about_me': "关于我", 'about_more': "了解更多", 'view_cv': "查看我的简历", "background": "背景资料", 'education': "教育资料", 'employment': "工作经历", 'position': "其他任职", 'projects': "项目", 'subjects': "方向", 'goal':
+            "我们的研究核心是开发数学工具以量化自然、工程和社会系统中的不确定性，进而对这些系统状态做出更准确与全面的预测。我们研究的具体应用包含环境保护（洪水预测）、生态平衡（水华爆发）、石油开采和新能源系统。",  'publications': "发表论文", "contact_info": "联系方式", 'rights': "© 2019 Wangpengroup. 保留所有权利", 'show_more': "显示更多", 'show_less': "隐藏"}
+    ];
 language_code = 0;
 jQuery(document).ready(function($) {
     $(".scroll").click(function(event){		
@@ -825,54 +640,13 @@ function pub_switch() {
         i = i + 1;
     }
 }
-var passes = document.getElementById('passes');
-var lis = passes.querySelectorAll('li');
-for (var i = 0; i < lis.length; i++) {
-    lis[i].addEventListener('click', function(e) {
-        var current = passes.querySelector('.current');
-        if (current) {
-            current.classList.remove('current');
-        } else {
-            e.target.classList.add('current');
-        }
-
-        positionPasses(10);
-        e.target.style.opacity = 1;
-    });
-}
-
-function positionPasses(ratio) {
-    var currentPassed = false;
-    var hasCurrent = passes.querySelector('.current') ? true : false;
-    for (var i = 0; i < lis.length; i++) {
-        var order = i;
-        if (lis[i].classList.contains('current')) currentPassed = true;
-
-        if (!currentPassed) order += 1;
-
-        var offset = (order - 1) * 4 * (100 / ratio) + 39 * ratio;
-        if (hasCurrent) {
-            offset = 390 + (order + 1) * 39;
-        }
-        //lis[i].innerHTML = offset + '/' + i + '/' + hasCurrent;
-        lis[i].style.webkitTransform = 'translate3d(0, {offset}px, 0)'.replace('{offset}', offset);
-        lis[i].style.opacity = 0.7;
-    }
-}
-
-positionPasses(10);
-
-$(window).scroll(function() {
-    let scroll = $(this).scrollTop();
-    positionPasses(10 + scroll / 500);
-});
 </script>
 
 
 
-<script src="js/js.cookie.min.js"></script>
-<script src="js/SmoothScroll.min.js"></script>
-	
+<script src="../js/js.cookie.min.js"></script>
+<script src="../js/SmoothScroll.min.js"></script>
+
 
 </body>
 </html>

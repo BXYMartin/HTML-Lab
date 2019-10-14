@@ -272,12 +272,12 @@ a.navbar-brand span {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.link-effect-8 ul.nav li a:hover::before,.navbar-default .navbar-nav > .active > a::before {
+.link-effect-8 ul.nav li a.main:hover::before,.navbar-default .navbar-nav > .active > a.main::before {
 	visibility: visible;
 	top: 100%;
 	background: #B3D9D9;
 }
-.link-effect-8 ul.nav li a:hover::after,.navbar-default .navbar-nav > .active > a::after {
+.link-effect-8 ul.nav li a.main:hover::after,.navbar-default .navbar-nav > .active > a.main::after {
   visibility: visible;
   top: 0;
   background: #B3D9D9;
