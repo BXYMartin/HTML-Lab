@@ -1,6 +1,14 @@
 .icon-bar {
     background-color: #fff !important;
 }
+.alumni {
+    width: 32%; 
+    position: absolute !important;
+    top: 2%;
+}
+.img-responsive {
+    width: 100%;
+}
 .passes-container {
     pointer-events:none;
     width: 320px;
@@ -605,23 +613,23 @@ label.cru {
     position: relative;
     font-size: 1.3em;
     padding: 10px 0;
-    width: 55%;
+    width: 60%;
     margin: 13px auto;
     font-weight: 600;
     background:#B3D9D9;
-    -webkit-transform: translateY(100px);
-    -ms-transform: translateY(100px);
+    -webkit-transform: translateY(60px);
+    -ms-transform: translateY(60px);
     transform: translateY(100px);
     -webkit-transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
     transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
 }
 
 .hovereffect1:hover h4 {
-  -webkit-transform: translateY(80px);
-  -ms-transform: translateY(80px);
-  transform: translateY(80px);
-  -moz-transform:translateY(80px);
-  -o-transform: translateY(80px);
+  -webkit-transform: translateY(60px);
+  -ms-transform: translateY(60px);
+  transform: translateY(60px);
+  -moz-transform:translateY(60px);
+  -o-transform: translateY(60px);
 }
 
 .hovereffect1 .social_agileinfo{
@@ -637,7 +645,7 @@ label.cru {
     transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
     font-weight: normal;
     margin: 0;
-   padding: 6em 2em 0em;
+    padding: 1em 2em 0em;
 }
 
 .hovereffect1:hover .social_agileinfo{
@@ -650,7 +658,7 @@ label.cru {
 .social_agileinfo li{
 	display:inline-block;
 	float: none !important;
-    width: 66.66%;
+    width: 75%;
 }
 .social_agileinfo li a{
 	width:100%;
@@ -684,9 +692,6 @@ label.cru {
 .flex-slider{	
 	background:#222227;
 	padding: 70px 0 165px 0;
-}
-#flexiselDemo1 {
-	display: none;
 }
 .nbs-flexisel-container {
 	position: relative;
@@ -1293,7 +1298,7 @@ option{
 }
 @media(max-width:1024px){
 .hovereffect1 h4 {
-    margin: 5px auto;
+    margin: 60px auto;
 }
 .agile_map_grid {
     width: 47%;
@@ -1374,16 +1379,10 @@ option{
     margin-top: 1em;
 }
 .social_agileinfo li {
-    width: 95%;
+    width: 83%;
 }
 .hovereffect1 h4 {
     width: 76%;
-}
-.hovereffect1 .social_agileinfo {
-    padding: 0em 2em 0em;
-}
-.hovereffect1 h4 {
-    padding: 6px;
 }
 .copy h2 {
     float: none;
@@ -1507,7 +1506,7 @@ p.stats-info {
     width: 95%;
 }
 .hovereffect1 h4 {
-    width: 95%;
+    width: 86%;
 }
 .w3-contact-pos img {
     width: 84%;
@@ -1527,8 +1526,8 @@ p.stats-info {
     height: 30px;
 }
 .social_agileinfo li a i {
-    font-size: 1em;
-    line-height: 0.5em;
+    font-size: 1.4em;
+    line-height: 1.5em;
 }
 }
 @media(max-width:640px){
@@ -1578,21 +1577,24 @@ p.stats-info {
 .stats-info-1 {
     padding: 3em 8em 1em;
 }
+.social_agileinfo li {
+    width: 91%;
+}
 .hovereffect1 h4 {
     letter-spacing: 1px;
     font-size: 1em;
 }
 .hovereffect1 .overlay {
-    top: -32px;
-}
-.hovereffect1 h4 {
-    padding: 2px;
-}
-.hovereffect1 .social_agileinfo {
-    padding: 0em 1em 0em;
+    top: 0px;
 }
 .hovereffect1 .overlay {
     top: 0;
+}
+.hovereffect1 h4 {
+    width: 81%;
+}
+.alumni {
+    width: 20%;
 }
 }
 @media(max-width:568px){
@@ -1600,17 +1602,20 @@ p.stats-info {
     font-size: 3.5em;
     font-weight: 600;
 }
-.hovereffect1 .social_agileinfo {
-    padding: 0em 0em 0em;
+.hovereffect1 .overlay {
+    top: 0px;
 }
 .hovereffect1 .overlay {
-    top: 20px;
-}
-.hovereffect1 .overlay {
-    top: 12px;
+    top: 0px;
 }
 }
 @media(max-width:480px){
+.hovereffect1 h4 {
+    margin: 30px auto;
+}
+.hovereffect1 .social_agileinfo{
+    padding: 3em 1em 0em;
+}
 .w3_agile_banner_info h3 {
     font-size: 3em;
     font-weight: 600;
@@ -1652,13 +1657,10 @@ p.stats-info {
     left: 36%;
 }
 .hovereffect1 .overlay {
-    top: -25px;
+    top: 0px;
 }
 .nbs-flexisel-item {
     width: 199px!important;
-}
-.social_agileinfo li a {
-    display:none;
 }
 }
 @media(max-width:414px){
