@@ -2,8 +2,13 @@
     width: 33.33%;
     float: left;
 }
+.pubheader {
+    font-size: 20px;
+}
 .agile_team_grid .hori_3 {
     height: 200px;
+    margin: 0.5%;
+    width: 32%;
 }
 .icon-bar {
     background-color: #fff !important;
@@ -1321,6 +1326,9 @@ option{
 }
 }
 @media(max-width:991px){
+.stats {
+    display: none;
+}
 .navbar-nav > li > a {
     margin: 0 0.8em;
     padding: .7em 0;
@@ -1437,14 +1445,39 @@ option{
 
 }
 @media(max-width:767px){
-div#bs-example-navbar-collapse-1 {
+div.navbar-gray {
+    border: none;
     position: absolute;
-    width: 80%;
-    background: #000000fe;
+    width: 100%;
+    background-color: #444;
     text-align: center;
     z-index: 99;
 }
-
+div.navbar-colorful {
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    width: 200px;
+    background-color: #004477de;
+    text-align: center;
+    z-index: 99;
+    right: 40px;
+}
+.navbar-toggle-colorful {
+    background-color: #12345678 !important;
+}
+.navbar-toggle-gray {
+    background-color: #000000fe !important;
+}
+.collapsed {
+    background-color: transparent !important;
+}
+.link-effect-8 ul.nav li a::before {
+    display:none;
+}
+.link-effect-8 ul.nav li a::after {
+    display:none;
+}
 .navbar-nav {
     margin: 6.5px 15px;
 }
@@ -1505,6 +1538,9 @@ div#bs-example-navbar-collapse-1 {
 .w3-services, .team, .w3-login-form, .gallery {
     padding: 3em 0;
 }
+.welcome p {
+    letter-spacing: 0px;   
+}
 }
 @media(max-width:736px){
 .welcome {
@@ -1548,6 +1584,24 @@ p.stats-info {
 .social_agileinfo li a i {
     font-size: 1.4em;
     line-height: 1.5em;
+}
+.pubwidget h3 {
+    font-size: 1em;
+}
+.pubwidget span {
+    font-size: 1.4em;
+}
+.agileits_w3layouts_more {
+    margin-top: 0em;
+}
+.contentwidget span {
+    font-size: 0.5em;
+}
+.pubheader {
+    font-size: 1em !important;
+}
+.agileits_w3layouts_more a {
+    font-size: 0.5em;
 }
 }
 @media(max-width:640px){
