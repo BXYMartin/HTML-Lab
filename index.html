@@ -18,16 +18,13 @@
 	
 <body>
 <div id="loading" style="position: fixed; z-index: 999; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8);">
-<svg viewBox="0 90 800 600">
-  <defs>
-  
-   <line class="mark" x1="0" y1="0" x2="0" y2="0" fill="none" stroke="#5BB4D8" stroke-miterlimit="10" stroke-linecap="none" stroke-width="12"/>
-    
-   </defs>
- <g class="container1"/>
- <g class="container2"/>
-
-</svg>
+    <svg viewBox="0 90 800 600">
+        <defs>
+        <line class="mark" x1="0" y1="0" x2="0" y2="0" fill="none" stroke="#5BB4D8" stroke-miterlimit="10" stroke-linecap="none" stroke-width="12"/>
+        </defs>
+        <g class="container1"/>
+        <g class="container2"/>
+    </svg>
 </div>
 <script src='js/TweenMax.min.js'></script>
 <script  src="js/index.js"></script>
@@ -35,18 +32,30 @@
 <div id="passes-container" class="passes-container">
     <ul id="passes" class="passes">
         <li class="easyjet">
-            <div>
+            <div class="header">
                 News - Studies
+            </div>
+            <hr>
+            <div class="content">
+                Recent Studies: MTJ Hardware.
             </div>
         </li>
         <li class="airberlin">
-            <div>
+            <div class="header">
                 News - Invitations
+            </div>
+            <hr>
+            <div class="content">
+                Recent Invitations: Unknown.
             </div>
         </li>
         <li class="ba">
-            <div>
+            <div class="header">
                 News - Conferences
+            </div>
+            <hr>
+            <div class="content">
+                Recent Conf: Unknown.
             </div>
         </li>
     </ul>

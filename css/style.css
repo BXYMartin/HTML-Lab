@@ -69,6 +69,10 @@
 .passes li.current {
     -webkit-transform: translate3d(0, 0, 0) !important;
 }
+
+.passes li.current > div.content {
+    opacity: 1;
+}
 .passes li:before,
 .passes li:after {
     content: '';
@@ -96,11 +100,23 @@
     background: #003366;
     color: #fff;
 }
-.passes li > div {
+.passes li > div.header {
     font-family: "Helvetica Neue", sans;
     margin-top: 10px;
     text-align: center;
     pointer-events: none;
+}
+.passes li > div.content {
+    font-family: "Helvetica Neue", sans;
+    margin-top: 10px;
+    text-align: left;
+    margin: 20px;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+.passes li > hr {
+    border-top: 3px solid rgba(0, 0, 0, .2);
+    margin-top: 10px;
 }
 html, body{
     font-size: 100%;
