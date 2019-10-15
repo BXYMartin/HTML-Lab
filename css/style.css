@@ -2,6 +2,21 @@
     width: 33.33%;
     float: left;
 }
+.corp {
+    position: relative;
+    float: right;
+    font-family:"Times New Roman", Times, serif;
+    color: #000;
+}
+.modal-header > div > p > img {
+    position: absolute;
+    width: auto !important;
+    max-width: 300px;
+    max-height: 70px;
+    min-height: 40px;
+    right: 8%;
+    opacity: 0.3;
+}
 .pubheader {
     font-size: 20px;
 }
@@ -920,8 +935,8 @@ option{
 }
 /* //contact form */
 /*--modal--*/
-.modal-content  img{
-	width:100%;
+.modal-content img{
+   width:100%;
 }
 .modal-content h4 {
     color:#B3D9D9;
