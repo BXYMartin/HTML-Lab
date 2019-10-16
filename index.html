@@ -5,8 +5,6 @@
 <!-- custom-theme -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //custom-theme -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -26,8 +24,6 @@
         <g class="container2"/>
     </svg>
 </div>
-<script src='js/TweenMax.min.js'></script>
-<script  src="js/index.js"></script>
 <!-- news -->
 <div id="passes-container" class="passes-container">
     <ul id="passes" class="passes">
@@ -348,7 +344,7 @@
         <hr>
     </div>
 
-    <div class="pubwidget">
+    <div class="pubwidget hidpub">
         <div>
             <div class="datewidget">
                 <h3><span style="color: #0000ff;">2019</span></h3>
@@ -363,7 +359,7 @@
         <hr>
     </div>
 
-    <div class="pubwidget">
+    <div class="pubwidget hidpub">
         <div>
             <div class="datewidget">
                 <h3><span style="color: #0000ff;">2019</span></h3>
@@ -378,7 +374,7 @@
         <hr>
     </div>
 
-    <div class="pubwidget">
+    <div class="pubwidget hidpub">
         <div>
             <div class="datewidget">
                 <h3><span style="color: #0000ff;">2018</span></h3>
@@ -393,7 +389,7 @@
         <hr>
     </div>
 
-    <div class="pubwidget">
+    <div class="pubwidget hidpub">
         <div>
             <div class="datewidget">
                 <h3><span style="color: #0000ff;">2018</span></h3>
@@ -408,7 +404,7 @@
         <hr>
     </div>
 
-    <div class="pubwidget">
+    <div class="pubwidget hidpub">
         <div>
             <div class="datewidget">
                 <h3><span style="color: #0000ff;">2017</span></h3>
@@ -423,7 +419,7 @@
         <hr>
     </div>
 
-    <div class="pubwidget">
+    <div class="pubwidget hidpub">
         <div>
             <div class="datewidget">
                 <h3><span style="color: #0000ff;">2016</span></h3>
@@ -438,7 +434,7 @@
         <hr>
     </div>
 
-    <div class="pubwidget">
+    <div class="pubwidget hidpub">
         <div>
             <div class="datewidget">
                 <h3><span style="color: #0000ff;">2016</span></h3>
@@ -453,7 +449,7 @@
         <hr>
     </div>
 
-    <div class="pubwidget">
+    <div class="pubwidget hidpub">
         <div>
             <div class="datewidget">
                 <h3><span style="color: #0000ff;">2015</span></h3>
@@ -468,7 +464,7 @@
         <hr>
     </div>
 
-    <div class="pubwidget">
+    <div class="pubwidget hidpub">
         <div>
             <div class="datewidget">
                 <h3><span style="color: #0000ff;">2013</span></h3>
@@ -483,7 +479,7 @@
         <hr>
     </div>
 
-    <div class="pubwidget">
+    <div class="pubwidget hidpub">
         <div>
             <div class="datewidget">
                 <h3><span style="color: #0000ff;">2013</span></h3>
@@ -498,7 +494,7 @@
         <hr>
     </div>
 
-    <div class="pubwidget">
+    <div class="pubwidget hidpub">
         <div>
             <div class="datewidget">
                 <h3><span style="color: #0000ff;">2012</span></h3>
@@ -513,7 +509,7 @@
         <hr>
     </div>
 
-    <div class="pubwidget">
+    <div class="pubwidget hidpub">
         <div>
             <div class="datewidget">
                 <h3><span style="color: #0000ff;">2011</span></h3>
@@ -528,7 +524,7 @@
         <hr>
     </div>
 
-    <div class="pubwidget">
+    <div class="pubwidget hidpub">
         <div>
             <div class="datewidget">
                 <h3><span style="color: #0000ff;">2011</span></h3>
@@ -543,7 +539,7 @@
         <hr>
     </div>
 
-    <div class="pubwidget">
+    <div class="pubwidget hidpub">
         <div>
             <div class="datewidget">
                 <h3><span style="color: #0000ff;">2009</span></h3>
@@ -759,8 +755,10 @@
 <!-- js -->
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <!-- //js -->
+<script src='js/TweenMax.min.js'></script>
+<script src="js/index.js"></script>
 <!-- for bootstrap working -->
-	<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
 <!-- flexSlider -->
 				<script defer src="js/jquery.flexslider.js"></script>
@@ -863,8 +861,7 @@ $('#J_lang_switch').click(function(){
     Cookies.set('lang', language_code);
 });
 function pub_switch() {
-    var i = 0;
-    var widgets = document.getElementsByClassName("pubwidget");
+    var widgets = $(".hidpub");
     show_more = 1 - show_more;
     if(show_more == 1) {
         document.getElementById("show_more").setAttribute('data-lang', 'show_less');
@@ -874,14 +871,13 @@ function pub_switch() {
         document.getElementById("show_more").setAttribute('data-lang', 'show_more');
         document.getElementById("show_more").text = language_map[language_code]["show_more"];
     }
-    for(var pub = 0; pub < widgets.length; pub = pub + 1) {
-        if(show_more == 1) {
-            widgets[pub].style.display = "grid";
-        }
-        else if(i > 3) {
-            widgets[pub].style.display = "none";
-        }
-        i = i + 1;
+
+    if(show_more == 1) {
+        widgets.slideDown();
+    }
+    else {
+        $('html,body').animate({scrollTop:$('#publications').offset().top},500);
+        widgets.slideUp(); 
     }
 }
 var passes = document.getElementById('passes');
