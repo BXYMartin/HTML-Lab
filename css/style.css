@@ -166,6 +166,9 @@ a:focus{
 .contentwidget {
     width: 90%;
 }
+.navbar-nav {
+    float: right;
+}
 }
 
 .pubwidget {
