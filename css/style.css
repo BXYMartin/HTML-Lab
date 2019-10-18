@@ -21,6 +21,7 @@
     width: 100%;
     line-height: 30px;
     font-size: 20px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
     color: #666666;
@@ -1756,6 +1757,9 @@ p.stats-info {
 .hovereffect1 .overlay {
     top: 0px;
 }
+.g-nav-list span {
+    letter-spacing: 0px;
+}
 }
 @media(max-width:480px){
 .hovereffect1 h4 {
@@ -1865,7 +1869,8 @@ p.stats-info {
     width: 80%;
 }
 .g-nav-list span {
-    font-size: 14px;   
+    font-size: 14px;
+    letter-spacing: 0px;
 }
 }
 @media(max-width:375px){
