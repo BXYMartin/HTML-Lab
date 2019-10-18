@@ -42,7 +42,9 @@
     position: relative;
     float: right;
     font-family:"Times New Roman", Times, serif;
-    color: #000;
+    color: #636363;
+    line-height: 1em;
+    padding-top: 0.5em;
 }
 .modal-header > div > p > img {
     position: absolute;
@@ -1006,7 +1008,7 @@ option{
     font-size: 18px;
 }
 .modal-content p{
-	color:#636363;
+	color:#111;
 	font-size:14px;
 	line-height:25px;
 	    padding-top: 10px;
@@ -1845,6 +1847,9 @@ p.stats-info {
 .copy p {
     font-size: 0.9em;
     margin: 1em;
+}
+.modal-header > div > p > img {
+    display: none;
 }
 }
 @media(max-width:384px){
