@@ -1,3 +1,39 @@
+.g-nav-list {
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    padding-bottom: 2em;
+}
+
+.g-nav-list li {
+    list-style: none;
+    position: relative;
+    text-align: center;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+}
+
+.g-nav-list span {
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    line-height: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #666666;
+}
+
+.g-nav-list .selected{
+    border-bottom: 2px solid #709696
+}
+
+.g-nav-list .selected span {
+    width: 100%;
+    color: #709696;
+    line-height: 30px;
+}
+
 .hori_3 {
     width: 33.33%;
     float: left;
@@ -171,7 +207,7 @@ a:focus{
 }
 }
 
-.pubwidget {
+.reswidget {
     width: 100%;
     display: grid;
     margin-bottom: -40px;
@@ -1619,10 +1655,10 @@ p.stats-info {
     font-size: 1.4em;
     line-height: 1.5em;
 }
-.pubwidget h3 {
+.reswidget h3 {
     font-size: 1em;
 }
-.pubwidget span {
+.reswidget span {
     font-size: 1.4em;
 }
 .agileits_w3layouts_more {
@@ -1821,6 +1857,9 @@ p.stats-info {
 .login-form.banner-posit {
     width: 80%;
 }
+.g-nav-list span {
+    font-size: 14px;   
+}
 }
 @media(max-width:375px){
 .botttom-nav-agileits ul.nav-w3ls li {
@@ -1857,6 +1896,9 @@ p.stats-info {
 }
 .nbs-flexisel-item {
     width: 387px!important;
+}
+.g-nav-list span {
+    font-size: 10px;   
 }
 }
 /*-- /responsive design --*/
