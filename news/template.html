@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Student's Homepage</title>
+<!-- custom-theme -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //custom-theme -->
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" property="" />
+<link rel="stylesheet" href="../css/swipebox.css">
+<!-- font-awesome-icons -->
+<link rel="stylesheet" href="../css/font-awesome.min.css" />
+</head>
+	
+<body>
+<div id="loading" style="position: fixed; z-index: 999; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8);">
+<svg viewBox="0 90 800 600">
+  <defs>
+  
+   <line class="mark" x1="0" y1="0" x2="0" y2="0" fill="none" stroke="#5BB4D8" stroke-miterlimit="10" stroke-linecap="none" stroke-width="12"/>
+    
+   </defs>
+ <g class="container1"/>
+ <g class="container2"/>
+
+</svg>
+</div>
+<script src='../js/TweenMax.min.js'></script>
+<script  src="../js/index.js"></script>
+<!-- banner -->
+	<div class="jarallax" id="home" style="background-color: #444; min-height: auto;">
+	<div class="agile_dot_info one">
+		<div class="container" style="width: 100%;">
+			<nav class="navbar navbar-default" style="padding: 0.5em 0 0 0;">
+				<div class="navbar-header navbar-left">
+					<button type="button" class="navbar-toggle navbar-toggle-gray collapsed" style="margin: 0.3em 0 0 0;" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+                    <h1><a class="navbar-brand" href="../index.html">P R I M E <span style="font-weight: 100; margin-left: 0.5em; font-size: 0.5em;">NEWS</span></a></h1>
+				</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right navbar-gray" id="bs-example-navbar-collapse-1">
+					<nav class="link-effect-8" id="link-effect-8">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="../index.html" data-lang="home">Home</a></li>
+							<li><a href="#about" class="scroll" data-lang="about">About</a></li>
+							<li><a id="J_lang_switch" data-lang="change_language">切换至中文</a> </li>
+						</ul>
+					</nav>
+				</div>
+			</nav>
+		</div>
+	</div>
+	</div>
+<!-- //banner -->	
+<!-- welcome -->
+<!---728x90--->
+ 	<div class="welcome" id="about">
+		  <div class="container">
+				<div class="ab-w3l-spa w3-head-center">
+					<label class="wel"></label>
+					<h3 class="w3-head-left" data-lang="student_name">Your Name</h3>
+                    <div style="margin: 2%; height: 400px; background: url('./images/example.jpg') no-repeat; background-size: cover;"></div>
+					<p data-lang="intro_1">Professor, School of Mathematics and System Science, Beihang University</p>
+						<p data-lang="intro_2">Editor of ...</p> 
+				</div>
+		   </div>
+    </div>
+<!-- //welcome -->
+
+<!-- Footer -->
+	<div class="reach-wthree" id="contact">
+		<div class="container">
+			<h3 data-lang="contact_info">Contact Info</h3>
+				<h4 style="font-size: 100%; color: #fff; padding: 10px;line-height: 1.5;">
+					<span>address :</span> 507 Boylston St,Boston USA. <br>
+					<span>email :</span> <a href="mailto:info@example.com">info@example.com</a> <br>
+					<span>call us :</span> (+020) 142 3246 918 <br>
+				</h4>
+		</div>
+	</div>
+	<div class="w3l_footer_agileinfo">
+		<div class="container">
+			<div class="col-md-3 mailadd-w3ls">
+				<p><span class="fa fa-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">info@example.com</a></p>
+			</div>
+			<div class="col-md-6 botttom-nav-agileits">
+				<ul class="nav-w3ls">
+					<li><a href="#home" class="scroll" data-lang="home">Home</a></li>
+					<li><a href="#about"  class="scroll" data-lang="about">About</a></li>
+				</ul>
+			</div>
+
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- //Footer -->
+	<!--Copy-right-->
+	<div class="copy">
+		<div class="container">
+			<h2><a href="../index.html">P R I M E</a></h2>
+			<p style="padding: 10px;" data-lang="rights">© 2019 PRIME. All Rights Reserved</p>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--// Copy-right -->
+
+<!-- js -->
+<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!-- for bootstrap working -->
+<script src="../js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- /numscroller -->		
+<script type="text/javascript" src="../js/numscroller-1.0.js"></script>
+<!-- //numscroller -->	
+<script type="text/javascript" src="../js/move-top.js"></script>
+<script type="text/javascript" src="../js/easing.js"></script>
+<!-- here starts scrolling icon -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        /*
+                var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear' 
+                };
+         */
+
+        $().UItoTop({ easingType: 'easeOutQuart', scrollSpeed: 800 });
+
+    });
+</script>
+<!-- //here ends scrolling icon -->
+<script type="text/javascript">
+    show_more = 1;
+language_map = 
+    [
+        {'change_language': "切换至中文", 'page_title': "Wangpengroup Homepage", 'home': "Home", 'about': "About", 'research': "Research", 'partners': "Partners", 'contact': "Contact", 'team': "Team", 'about_me': "About Me", 'about_more': "Learn More", 'view_cv': "View My CV",
+            "background": "Background", 'education': "Education", 'employment': "Employment", 'position': "Position", 'projects': "Projects", 'subjects': "Subjects", 'goal': "Our goal is to develop mathematical tools to quantify uncertainty in nature, engineering systems and our society, and thus provide more accurate and comprehensive predictions of these system states. Applications of our work include environmental protection (flood prediction), ecology (algae blooms), oil recovery and renewable energy systems.", 'funding_info': "Funding Info", 'fundings': "Fundings", 'details': "Details", 'publications': "Publications", "contact_info": "Contact Info", 'rights': "© 2019 Wangpengroup. All Rights Reserved", 'show_more': "Show More", 'show_less': "Show Less"},
+        {'change_language': "English Version", 'page_title': "学生的个人主页", 'home': "主页", 'about': "关于", 'research': "科研", 'partners': "合作", 'contact': "联系我们", 'team': "成员", 'about_me': "关于我", 'about_more': "了解更多", 'view_cv': "查看我的简历", "background": "背景资料", 'education': "教育资料", 'employment': "工作经历", 'position': "其他任职", 'projects': "项目", 'subjects': "方向", 'goal':
+            "我们的研究核心是开发数学工具以量化自然、工程和社会系统中的不确定性，进而对这些系统状态做出更准确与全面的预测。我们研究的具体应用包含环境保护（洪水预测）、生态平衡（水华爆发）、石油开采和新能源系统。",  'publications': "发表论文", "contact_info": "联系方式", 'rights': "© 2019 Wangpengroup. 保留所有权利", 'show_more': "显示更多", 'show_less': "隐藏"}
+    ];
+language_code = 0;
+jQuery(document).ready(function($) {
+    $(".scroll").click(function(event){		
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+    });
+    language_code = Cookies.get('lang');
+    if (language_code == undefined) {
+        language_code = 0; 
+        Cookies.set('lang', 0);
+    }
+    else {
+        for(var i in language_map[language_code]){
+            $('[data-lang="'+i+'"]').animate({ opacity : "0" }, 0, replace(i, language_map[language_code][i]));
+            $('[data-lang="'+i+'"]').animate({ opacity : "1" }, 500);
+        }
+        document.title = language_map[language_code]['page_title'];
+    }
+    $('#loading')/*.delay(5000)*/.animate({ opacity : "0" }, 1000, function() {
+        $('#loading').css('display', 'none');
+    });
+});
+function replace(index, content) {
+    $('[data-lang="'+index+'"]').text(content);
+}
+$('#J_lang_switch').click(function(){
+    language_code = 1 - language_code;
+    for(var i in language_map[language_code]){
+        $('[data-lang="'+i+'"]').animate({ opacity : "0" }, 0, replace(i, language_map[language_code][i]));
+        $('[data-lang="'+i+'"]').animate({ opacity : "1" }, 500);
+    }
+    document.title = language_map[language_code]['page_title'];
+    Cookies.set('lang', language_code);
+});
+</script>
+
+
+
+<script src="../js/js.cookie.min.js"></script>
+<script src="../js/SmoothScroll.min.js"></script>
+
+
+</body>
+</html>
