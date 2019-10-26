@@ -1,3 +1,35 @@
+.swiper-container {
+    width: 100%;
+    padding-bottom: 50px;
+}
+.swiper-img > img {
+    object-fit: cover;
+    width: 100%;
+    height: 220px;
+    display: block;
+}
+.swiper-details {
+    text-align: center;
+    background-color: #fff;
+}
+.overlay {
+    height: 100%;
+}
+.swiper-details > h2 {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    line-height: 80px;
+}
+.swiper-details > h2 > a {
+    cursor: pointer;
+    color: #559696;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 0px 5px #888888;
+}
 .g-nav-list {
     width: 100%;
     display: -webkit-box;
@@ -61,16 +93,12 @@
 .pubheader {
     font-size: 20px;
 }
-.agile_team_grid .hori_3 {
-    height: 200px;
-    margin: 0.5%;
-    width: 32%;
-}
 .icon-bar {
     background-color: #fff !important;
 }
 .alumni {
-    width: 32%; 
+    width: 32% !important; 
+    height: auto !important;
     position: absolute !important;
     top: 2%;
 }
@@ -756,22 +784,6 @@ label.cru {
 .social_agileinfo li a i{
 	font-size:1em;
 	line-height:2.8em;
-}
-.w3_facebook:hover{
-	border:1px solid #3b5998;
-	background:#3b5998;
-}
-.globe_website:hover{
-	border:1px solid #1da1f2;
-	background:#1da1f2;
-}
-.w3_instagram:hover{
-	border:1px solid #833ab4;
-	background:#833ab4;
-}
-.w3_google:hover{
-	border:1px solid #dd4b39;
-	background:#dd4b39;
 }
 /*--flexisel--*/
 .flex-slider{	
@@ -1767,9 +1779,6 @@ p.stats-info {
 }
 .hovereffect1 .social_agileinfo{
     padding: 3em 1.5em 0em;
-}
-.agile_team_grid .hori_3 {
-    width: 100%;
 }
 .w3_agile_banner_info h3 {
     font-size: 3em;
