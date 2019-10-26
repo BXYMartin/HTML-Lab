@@ -1,4 +1,8 @@
 var show_more = 1;
+name_map = [
+    {'BIAN_ZHENG': 'BIAN Zheng', 'CHEN_HUALI': 'CHEN Huali', 'CHENG_MING': 'CHENG Ming', 'QIN_YI': 'QIN Yi', 'YANG_LUN': 'YANG Lun', 'SUN_XIXI': 'SUN Xixi', 'SHI_XIAOFENG': 'SHI Xiaofeng', 'LIU_ZEXIN': 'LIU Zexin', 'MAO_WEIZE': 'MAO Weize', 'ZHOU_ZIXU': 'ZHOU Zixu', 'ZHOU_ZITONG': 'ZHOU Zitong'},
+    {'BIAN_ZHENG': '边政', 'CHEN_HUALI': '陈桦立', 'CHENG_MING': '承铭', 'QIN_YI': '覃怡', 'YANG_LUN': '杨伦', 'SUN_XIXI': '孙茜茜', 'SHI_XIAOFENG': '史晓锋', 'LIU_ZEXIN': '刘泽新', 'MAO_WEIZE': '茅伟泽', 'ZHOU_ZIXU': '周子煦', 'ZHOU_ZITONG': '周梓桐'}
+];
 language_map =
     [
         {'change_language': "切换至中文", 'page_title': "Wangpengroup Homepage", 'home': "Home", 'about': "About",
@@ -36,6 +40,10 @@ jQuery(document).ready(function($) {
             $('[data-lang="'+i+'"]').animate({ opacity : "0" }, 0, replace(i, language_map[language_code][i]));
             $('[data-lang="'+i+'"]').animate({ opacity : "1" }, 500);
         }
+        for(var i in name_map[language_code]){
+            $('[data-lang="'+i+'"]').animate({ opacity : "0" }, 0, replace(i, name_map[language_code][i]));
+            $('[data-lang="'+i+'"]').animate({ opacity : "1" }, 500);
+        }
         document.title = language_map[language_code]['page_title'];
     }
     $('#loading')/*.delay(5000)*/.animate({ opacity : "0" }, 1000, function() {
@@ -50,6 +58,10 @@ $('#J_lang_switch').click(function(){
     language_code = 1 - language_code;
     for(var i in language_map[language_code]){
         $('[data-lang="'+i+'"]').animate({ opacity : "0" }, 0, replace(i, language_map[language_code][i]));
+        $('[data-lang="'+i+'"]').animate({ opacity : "1" }, 500);
+    }
+    for(var i in name_map[language_code]){
+        $('[data-lang="'+i+'"]').animate({ opacity : "0" }, 0, replace(i, name_map[language_code][i]));
         $('[data-lang="'+i+'"]').animate({ opacity : "1" }, 500);
     }
     document.title = language_map[language_code]['page_title'];
