@@ -17,12 +17,18 @@ language_map =
             'publications': "Publications", 'books': "Books", 'codes': "Codes", "contact_info": "Contact Info",
             'rights': "© 2019 Wangpengroup. All Rights Reserved", 'banner_1_1': "We focus on",
             'banner_1_2': "Material Science", 'banner_2_1': "We study", 'banner_2_2': "Energy Profile", 'banner_3_1': "We simulate",
-            'banner_3_2': "Flow Dynamics", 'stochastic': "Stochastic", 'show_more': "Show More", 'show_less': "Show Less"},
+            'banner_3_2': "Flow Dynamics", 'energy': "Energy", 'show_more': "Show More", 'show_less': "Show Less",
+            'uq': "Uncertainty Quantification", 'pm': "Porous Media Analysis", 'ee': "Environment & Energy",
+            'gs': "Graduates", 'us': "Undergraduates", 'as': "Alumni", 'scholar': "Google Scholar", 'videos': "Videos",
+        },
         {'change_language': "English Version", 'page_title': "王鹏教授的实验室主页", 'home': "主页", 'about': "关于", 'research': "科研", 'partners': "合作", 'contact': "联系我们", 'team': "成员", 'prof_name': "王鹏 教授", 'prof_title': "王鹏 教授", 'about_me': "关于我", 'about_more': "了解更多", 'intro_1': "北京航空航天大学 数学与系统科学学院 教授", 'intro_2': "中组部“青年千人计划”专家", 'view_cv': "查看我的简历", "full_intro":
             "我是一名研究不确定性量化的计算数学学者。我们团队致力于结合数学理论与高效计算方法，与具体行业的科学家共同解决实际的自然和工程问题。我们的研究核心是开发数学工具以量化自然、工程和社会系统中的不确定性，进而对这些系统状态做出更准确与全面的预测。我们研究的具体应用包含环境保护（洪水预测）、生态平衡（水华爆发）、石油开采和新能源系统。", "background": "背景资料", 'education': "教育资料", 'employment': "工作经历", 'position': "其他任职", 'projects': "项目", 'subjects': "方向", 'goal':
             "我们的研究核心是开发数学工具以量化自然、工程和社会系统中的不确定性，进而对这些系统状态做出更准确与全面的预测。我们研究的具体应用包含环境保护（洪水预测）、生态平衡（水华爆发）、石油开采和新能源系统。", 'funding_info': "经费详情", 'fundings': "经费", 'details': "详情", 'resources': "资源", 'publications': "发表论文", 'books': "书籍", 'codes': "代码", "contact_info": "联系方式", 'rights': "© 2019 Wangpengroup. 保留所有权利", 'banner_1_1': "我们研究", 'banner_1_2': "材料科学", 'banner_2_1': "我们解决", 'banner_2_2': "能源问题",
             'materials': "新材料", 'medicines': "制药",
-            'banner_3_1': "我们模拟", 'banner_3_2': "流体力学", 'stochastic': "随机过程", 'show_more': "显示更多", 'show_less': "隐藏"}
+            'banner_3_1': "我们模拟", 'banner_3_2': "流体力学", 'energy': "能源", 'show_more': "显示更多", 'show_less': "隐藏",
+            'uq': "不确定性量化", 'pm': "多孔介质分析", 'ee': "能源与环境",
+            'gs': "研究生和博士生", 'us': "本科生", 'as': "毕业生", 'scholar': "谷歌学术", 'videos': "视频",
+        }
     ];
 language_code = 0;
 jQuery(document).ready(function($) {
@@ -69,7 +75,7 @@ $('#J_lang_switch').click(function(){
 });
 
 var currentPage = 0;
-var names = [".pubwidget", ".jrlwidget", ".codwidget"];
+var names = [".pubwidget", ".jrlwidget", ".codwidget", ".vdowidget"];
 showUp(currentPage);
 
 function pub_switch() {
@@ -132,7 +138,7 @@ $(window).scroll(function() {
     positionPasses(10 + scroll / 500);
 });
 
-$.fn.toolBar = function changeBar(pubsAction, jrlsAction, codsAction){
+$.fn.toolBar = function changeBar(pubsAction, jrlsAction, codsAction, vdosAction){
     $("#pubs").click(function(){
         var index = $(".g-nav-list").find("li[class=selected]").index();
         if (index == 0) return;
@@ -155,6 +161,14 @@ $.fn.toolBar = function changeBar(pubsAction, jrlsAction, codsAction){
         changeBtnState(2);
         if(codsAction){
             codsAction();
+        }
+    });
+    $("#vdos").click(function(){
+        var index = $(".g-nav-list").find("li[class=selected]").index();
+        if (index == 3) return;
+        changeBtnState(3);
+        if(vdosAction){
+            vdosAction();
         }
     });
 }
@@ -198,6 +212,78 @@ $().toolBar(
     function action_cods(){
         currentPage = 2;
         showUp(currentPage);
+    },
+    function action_vdos(){
+        currentPage = 3;
+        showUp(currentPage);
+    }
+);
+
+var pcurrentPage = 0;
+var pnames = [".gs", ".us", ".as"];
+pshowUp(pcurrentPage);
+
+$.fn.ptoolBar = function changeBar(gAction, uAction, aAction){
+    $("#gs").click(function(){
+        var index = $(".p-nav-list").find("li[class=selected]").index();
+        if (index == 0) return;
+        changepBtnState(0);
+        if(gAction){
+            gAction();
+        }
+    });
+    $("#us").click(function(){
+        var index = $(".p-nav-list").find("li[class=selected]").index();
+        if (index == 1) return;
+        changepBtnState(1);
+        if(uAction){
+            uAction();
+        }
+    });
+    $("#as").click(function(){
+        var index = $(".p-nav-list").find("li[class=selected]").index();
+        if (index == 2) return;
+        changepBtnState(2);
+        if(aAction){
+            aAction();
+        }
+    });
+}
+
+function changepBtnState(num){
+    $(".p-nav-list li").each(function(index){
+        if (num == index) {
+            $(this).attr("class", "selected");
+        }
+        else {
+            $(this).attr("class", "none");
+        }
+    });
+}
+
+function pshowUp(index) {
+    for (var i = 0; i < names.length; i++) {
+        if (i == index) {
+            $(pnames[i]).slideDown();
+        }
+        else {
+            $(pnames[i]).slideUp();
+        }
+    }
+}
+
+$().ptoolBar(
+    function action_as(){
+        pcurrentPage = 0;
+        pshowUp(pcurrentPage);
+    },
+    function action_us(){
+        pcurrentPage = 1;
+        pshowUp(pcurrentPage);
+    },
+    function action_as(){
+        pcurrentPage = 2;
+        pshowUp(pcurrentPage);
     }
 );
 

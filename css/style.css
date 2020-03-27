@@ -12,6 +12,20 @@
     text-align: center;
     background-color: #fff;
 }
+.show_div {
+    float:left;
+    margin: 8% 0;
+}
+.show_icon {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding:10px;
+}
+.show_case {
+    width: 80%;margin-left:15%;
+    border: 5px solid white;
+}
 .overlay {
     height: 100%;
 }
@@ -64,6 +78,45 @@
 }
 
 .g-nav-list .selected span {
+    width: 100%;
+    color: #709696;
+    line-height: 30px;
+}
+
+.p-nav-list {
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    margin-bottom: 2em;
+    border-bottom: 1px solid #d5d5d5;
+    box-shadow: 0 1px 0px 0px rgba(160,160,160,0.2);
+}
+
+.p-nav-list li {
+    list-style: none;
+    position: relative;
+    text-align: center;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+}
+
+.p-nav-list span {
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    line-height: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #666666;
+}
+
+.p-nav-list .selected{
+    border-bottom: 2px solid #709696
+}
+
+.p-nav-list .selected span {
     width: 100%;
     color: #709696;
     line-height: 30px;
@@ -491,10 +544,11 @@ a.w3_agile_vimeo:hover{
 }
 /*-- welcome --*/
 .welcome {
-    padding: 4em 0 0 0;
+    padding: 0 0 0 0;
+    display: grid;
 }
 .w3-services,.team,.w3-login-form,.gallery{
-padding:4em 0;
+padding:4em 0 0 0;
 }
 label.wel {
     width: 150px;
@@ -504,20 +558,32 @@ label.wel {
 }
 .welcome p {
     font-size: 16px;
-    letter-spacing: 2px;
-    color: #777;
-    width: 90%;
-    margin: 0 auto 20px;
+    letter-spacing: 1px;
+    color: #bbb;
+    margin: 20px;
     line-height: 28px;
     text-align: center;
 }
+.description p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #666;
+    margin: 20px;
+    line-height: 28px;
+    text-align: center;
+}
+.welcome p.intro_3 {
+    display: contents;letter-spacing: 0px;color:#fff;font-size: 20px;font-weight: bold;
+    -webkit-text-stroke: 1px #709696;
+}
 .agileits_w3layouts_more {
     text-align: center;
-    margin-top: 3em;
+    margin: 3em 0;
 }
 .agileits_w3layouts_more a {
     font-size: 15px;
-    color: #709696;
+    color: #fff;
+    -webkit-text-stroke: 1px #709696;
     font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
@@ -543,7 +609,7 @@ label.wel {
 }
 .w3-head-center h3 {
     font-size: 40px;
-    color: #212121;
+    color: #fff;
     font-weight: 600;
     margin-bottom: 30px;
     letter-spacing: 4px;
@@ -561,7 +627,7 @@ label.wel {
 }
 .stats-info-1 {
     background:#B3D9D9;
-    padding: 3em 3em 1em;
+    padding: 3em;
 }
 .stats-grid i {
 	margin-bottom: 35px;
@@ -877,7 +943,7 @@ label.cru {
     padding-right:5px!important;
     margin-bottom:4px;
 }
-#team, #publications {
+#publications {
     background: #f4f4f4;
 }
 .gallery_gds {
@@ -1365,7 +1431,6 @@ option{
 }
 @media(max-width:1280px){
 .navbar-nav > li > a {
-    margin: 0 .7em;
     padding: .7em 0;
     text-transform: uppercase;
 }
@@ -1413,6 +1478,20 @@ option{
 }
 }
 @media(max-width:991px){
+.show_case {
+    display: block;
+    margin: 0 auto;
+}
+.agileits_w3layouts_more {
+    padding-bottom: 1em;
+}
+.show_div {
+    float:none;
+    margin: 0 0;
+}
+.welcome {
+    display: block;
+}
 .stats {
     display: none;
 }
@@ -1433,9 +1512,6 @@ option{
 }
 .w3_agile_banner_info {
     margin: 6em 0 0;
-}
-.welcome p {
-    width: 94%;
 }
 .stats-grid.slideanim {
     width: 100%;
@@ -1772,6 +1848,9 @@ p.stats-info {
 .g-nav-list span {
     letter-spacing: 0px;
 }
+.p-nav-list span {
+    letter-spacing: 0px;
+}
 }
 @media(max-width:480px){
 .hovereffect1 h4 {
@@ -1805,7 +1884,7 @@ p.stats-info {
     padding: 3em 5em 1em;
 }
 .w3-head-center h3 {
-    font-size: 30px;
+    font-size: 24px;
 }
 .w3-head-left h3 {
     font-size: 30px;
@@ -1881,6 +1960,10 @@ p.stats-info {
     font-size: 14px;
     letter-spacing: 0px;
 }
+.p-nav-list span {
+    font-size: 14px;
+    letter-spacing: 0px;
+}
 }
 @media(max-width:375px){
 .botttom-nav-agileits ul.nav-w3ls li {
@@ -1900,7 +1983,7 @@ p.stats-info {
     font-weight: 800;
 }
 .banner {
-    background: url(../images/ban44.jpg) no-repeat -298px 0px;
+    background: url(../images/) no-repeat -298px 0px;
     background-size: cover;
 }
 .stats-info-1 {
@@ -1919,6 +2002,9 @@ p.stats-info {
     width: 387px!important;
 }
 .g-nav-list span {
+    font-size: 10px;   
+}
+.p-nav-list span {
     font-size: 10px;   
 }
 }
