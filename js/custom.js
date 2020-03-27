@@ -1,7 +1,7 @@
 var show_more = 1;
 name_map = [
-    {'BIAN_ZHENG': 'BIAN Zheng', 'CHEN_HUALI': 'CHEN Huali', 'CHENG_MING': 'CHENG Ming', 'QIN_YI': 'QIN Yi', 'YANG_LUN': 'YANG Lun', 'SUN_XIXI': 'SUN Xixi', 'SHI_XIAOFENG': 'SHI Xiaofeng', 'LIU_ZEXIN': 'LIU Zexin', 'MAO_WEIZE': 'MAO Weize', 'ZHOU_ZIXU': 'ZHOU Zixu', 'ZHOU_ZITONG': 'ZHOU Zitong'},
-    {'BIAN_ZHENG': '边政', 'CHEN_HUALI': '陈桦立', 'CHENG_MING': '承铭', 'QIN_YI': '覃怡', 'YANG_LUN': '杨伦', 'SUN_XIXI': '孙茜茜', 'SHI_XIAOFENG': '史晓锋', 'LIU_ZEXIN': '刘泽新', 'MAO_WEIZE': '茅伟泽', 'ZHOU_ZIXU': '周子煦', 'ZHOU_ZITONG': '周梓桐'}
+    {'FANG_ZEHUA': "FANG Zehua", 'YANG_XIAOYI': "YANG Xiaoyi", 'BIAN_ZHENG': 'BIAN Zheng', 'CHEN_HUALI': 'CHEN Huali', 'CHENG_MING': 'CHENG Ming', 'QIN_YI': 'QIN Yi', 'YANG_LUN': 'YANG Lun', 'SUN_XIXI': 'SUN Xixi', 'SHI_XIAOFENG': 'SHI Xiaofeng', 'LIU_ZEXIN': 'LIU Zexin', 'MAO_WEIZE': 'MAO Weize', 'ZHOU_ZIXU': 'ZHOU Zixu', 'ZHOU_ZITONG': 'ZHOU Zitong'},
+    {'FANG_ZEHUA': "方泽华", 'YANG_XIAOYI': "杨晓艺", 'BIAN_ZHENG': '边政', 'CHEN_HUALI': '陈桦立', 'CHENG_MING': '承铭', 'QIN_YI': '覃怡', 'YANG_LUN': '杨伦', 'SUN_XIXI': '孙茜茜', 'SHI_XIAOFENG': '史晓锋', 'LIU_ZEXIN': '刘泽新', 'MAO_WEIZE': '茅伟泽', 'ZHOU_ZIXU': '周子煦', 'ZHOU_ZITONG': '周梓桐'}
 ];
 language_map =
     [
