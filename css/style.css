@@ -16,6 +16,9 @@
     float:left;
     margin: 8% 0;
 }
+.show_icon_box {
+    color: #aaa;padding:0 20%;display: flex;
+}
 .show_icon {
     display: table-cell;
     vertical-align: middle;
@@ -1621,7 +1624,7 @@ div.navbar-colorful {
     border-radius: 8px;
     position: absolute;
     width: 200px;
-    background-color: #004477de;
+    background-color: #6f9595;
     text-align: center;
     z-index: 99;
     right: 40px;
@@ -1699,10 +1702,13 @@ div.navbar-colorful {
     right: 4%;
 }
 .w3-services, .team, .w3-login-form, .gallery {
-    padding: 3em 0;
+    padding: 3em 0 0 0;
 }
 .welcome p {
     letter-spacing: 0px;   
+}
+.welcome p.intro_3 {
+    font-size: 16px;
 }
 }
 @media(max-width:736px){
@@ -1783,8 +1789,15 @@ p.stats-info {
 .reach-wthree h3 {
     font-size: 35px;
 }
+.show_icon_box {
+    padding: 0;
+}
 }
 @media(max-width:600px){
+
+.passes li {
+    width: unset;
+}
 .w3_agile_banner_info {
     margin: 6em 0 0;
 }
@@ -1947,6 +1960,9 @@ p.stats-info {
 }
 }
 @media(max-width:384px){
+.welcome p.intro_3 {
+    font-size: 12px;
+}
 .stats-info-1 {
     padding: 3em 2em 1em;
 }
