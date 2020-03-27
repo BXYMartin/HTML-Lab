@@ -138,6 +138,21 @@ $(window).scroll(function() {
     positionPasses(10 + scroll / 500);
 });
 
+$(window).ready(function() {
+    currentImage = 1;
+    setInterval(function () {
+        for (var i = 0; i < $(".show_case").length; i++) {
+            if (currentImage == i) {
+                $($(".show_case")[i]).slideDown();
+            }
+            else {
+                $($(".show_case")[i]).slideUp();
+            }
+        }
+        currentImage = (currentImage + 1)%($(".show_case").length);
+    },5000);
+});
+
 $.fn.toolBar = function changeBar(pubsAction, jrlsAction, codsAction, vdosAction){
     $("#pubs").click(function(){
         var index = $(".g-nav-list").find("li[class=selected]").index();
