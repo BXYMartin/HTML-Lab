@@ -29,7 +29,7 @@ language_map =
             'materials': "新材料", 'medicines': "制药",
             'banner_3_1': "我们模拟", 'banner_3_2': "流体力学", 'energy': "能源", 'show_more': "显示更多", 'show_less': "隐藏",
             'uq': "不确定性量化", 'pm': "多孔介质分析", 'ee': "能源与环境",
-            'gs': "研究生和博士生", 'us': "本科生", 'as': "毕业生", 'scholar': "谷歌学术", 'videos': "视频", 'seafile': "登录", 'publication': '资源'
+            'gs': "研究生", 'us': "本科生", 'as': "毕业生", 'scholar': "谷歌学术", 'videos': "视频", 'seafile': "登录", 'publication': '资源'
         }
     ];
 language_code = 0;
