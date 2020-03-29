@@ -124,9 +124,9 @@ function positionPasses(ratio) {
 
         if (!currentPassed) order += 1;
 
-        var offset = (order - 1) * 4 * (100 / ratio) + 39 * ratio;
+        var offset = (order - 1) * 4 * (100 / ratio) + 51 * ratio;
         if (hasCurrent) {
-            offset = 390 + (order + 1) * 39;
+            offset = 510 + (order + 1) * 51;
         }
         lis[i].style.webkitTransform = 'translate3d(0, {offset}px, 0)'.replace('{offset}', offset);
         lis[i].style.opacity = 0.7;
