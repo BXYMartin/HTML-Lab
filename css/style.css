@@ -165,13 +165,14 @@
 }
 .passes-container {
     pointer-events:none;
-    width: 320px;
+    width: 250px;
     max-height: 568px;
     height: 100%;
-    position: fixed; 
+    position: absolute; 
     bottom: 0;
-    left: 1%;
-    z-index: 998;
+    left: 30px;
+    top: 8px;
+    z-index: 2;
 }
 .passes {
     pointer-events: all;
@@ -186,7 +187,6 @@
     position: absolute;
     display: inline-block;
     width: 100%;
-    height: 500px;
     border-radius: 10px;
     -webkit-box-shadow: 0px -15px 20px 0px rgba(0, 0, 0, 0.27);
     -moz-box-shadow: 0px -15px 20px 0px rgba(0, 0, 0, 0.27);
@@ -197,7 +197,7 @@
     -webkit-transition: all 0.4s ease-out;
 }
 .passes li.current {
-    -webkit-transform: translate3d(0, 0, 0) !important;
+    -webkit-transform: translate3d(0, 330px, 0) !important;
 }
 
 .passes li.current > div.content {
@@ -233,6 +233,7 @@
 .passes li > div.header {
     font-family: "Helvetica Neue", sans;
     margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
     pointer-events: none;
 }
@@ -1472,6 +1473,12 @@ option{
     width: 41%;
 }
 }
+@media(max-width:1100px){
+    .navbar-nav > li > a {
+        padding: .3em 0;
+        margin: 0 1em;
+    }
+}
 @media(max-width:1024px){
 .hovereffect1 h4 {
     margin: -10px auto;
@@ -1486,6 +1493,9 @@ option{
 }
 }
 @media(max-width:991px){
+.passes-container {
+    width: 200px;
+}
 .show_case {
     display: block;
     margin: 0 auto;
@@ -1593,7 +1603,15 @@ option{
     font-size: 20px;
     letter-spacing: 0px;
 }
-
+.passes-container {
+    width: 120px;
+}
+.ba > .content {
+    height: 10px;
+}
+.ba.current > .content {
+    height: unset;
+}
 .navbar-nav > li > a {
     margin: 0 0.5em;
     padding: .7em 0;
@@ -1714,6 +1732,9 @@ div.navbar-colorful {
 }
 .welcome p.intro_3 {
     font-size: 16px;
+}
+.passes-container {
+    width: 160px;
 }
 }
 @media(max-width:736px){

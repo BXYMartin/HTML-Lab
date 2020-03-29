@@ -109,36 +109,8 @@ for (var i = 0; i < lis.length; i++) {
         } else {
             e.target.classList.add('current');
         }
-
-        positionPasses(10);
-        e.target.style.opacity = 1;
     });
 }
-
-function positionPasses(ratio) {
-    var currentPassed = false;
-    var hasCurrent = passes.querySelector('.current') ? true : false;
-    for (var i = 0; i < lis.length; i++) {
-        var order = i;
-        if (lis[i].classList.contains('current')) currentPassed = true;
-
-        if (!currentPassed) order += 1;
-
-        var offset = (order - 1) * 4 * (100 / ratio) + 51 * ratio;
-        if (hasCurrent) {
-            offset = 510 + (order + 1) * 51;
-        }
-        lis[i].style.webkitTransform = 'translate3d(0, {offset}px, 0)'.replace('{offset}', offset);
-        lis[i].style.opacity = 0.7;
-    }
-}
-
-positionPasses(10);
-
-$(window).scroll(function() {
-    let scroll = $(this).scrollTop();
-    positionPasses(10 + scroll / 500);
-});
 
 $(document).ready(function() {
     currentImage = 0;
