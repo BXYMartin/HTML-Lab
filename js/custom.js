@@ -1,14 +1,16 @@
 var show_more = 1;
 name_map = [
-    {'FANG_ZEHUA': "FANG Zehua", 'YANG_XIAOYI': "YANG Xiaoyi", 'BIAN_ZHENG': 'BIAN Zheng', 'CHEN_HUALI': 'CHEN Huali', 'CHENG_MING': 'CHENG Ming', 'QIN_YI': 'QIN Yi', 'YANG_LUN': 'YANG Lun', 'SUN_XIXI': 'SUN Xixi', 'SHI_XIAOFENG': 'SHI Xiaofeng', 'LIU_ZEXIN': 'LIU Zexin', 'MAO_WEIZE': 'MAO Weize', 'ZHOU_ZIXU': 'ZHOU Zixu', 'ZHOU_ZITONG': 'ZHOU Zitong'},
-    {'FANG_ZEHUA': "方泽华", 'YANG_XIAOYI': "杨晓艺", 'BIAN_ZHENG': '边政', 'CHEN_HUALI': '陈桦立', 'CHENG_MING': '承铭', 'QIN_YI': '覃怡', 'YANG_LUN': '杨伦', 'SUN_XIXI': '孙茜茜', 'SHI_XIAOFENG': '史晓锋', 'LIU_ZEXIN': '刘泽新', 'MAO_WEIZE': '茅伟泽', 'ZHOU_ZIXU': '周子煦', 'ZHOU_ZITONG': '周梓桐'}
+    {'FANG_ZEHUA': "FANG Zehua", 'YANG_XIAOYI': "YANG Xiaoyi", 'BIAN_ZHENG': 'BIAN Zheng', 'CHEN_HUALI': 'CHEN Huali', 'CHENG_MING': 'CHENG Ming', 'QIN_YI': 'QIN Yi', 'YANG_LUN': 'YANG Lun', 'SUN_XIXI': 'SUN Xixi', 'SHI_XIAOFENG': 'SHI Xiaofeng', 'LIU_ZEXIN': 'LIU Zexin', 'MAO_WEIZE': 'MAO Weize', 'ZHOU_ZIXU': 'ZHOU Zixu', 'ZHOU_ZITONG': 'ZHOU Zitong',
+    'YE_YANAN': 'Ye Yanan', 'BAI_XINYU': 'BAI Xinyu', 'WANG_HUAXINYU': 'WANG Huaxinyu', 'LI_CHENGHAI': 'LI Chenghai', 'GUO_ZHENPENG': 'GUO Zhenpeng'},
+    {'FANG_ZEHUA': "方泽华", 'YANG_XIAOYI': "杨晓艺", 'BIAN_ZHENG': '边政', 'CHEN_HUALI': '陈桦立', 'CHENG_MING': '承铭', 'QIN_YI': '覃怡', 'YANG_LUN': '杨伦', 'SUN_XIXI': '孙茜茜', 'SHI_XIAOFENG': '史晓锋', 'LIU_ZEXIN': '刘泽新', 'MAO_WEIZE': '茅伟泽', 'ZHOU_ZIXU': '周子煦', 'ZHOU_ZITONG': '周梓桐',
+    'YE_YANAN': '叶亚楠', 'BAI_XINYU': '白心宇', 'WANG_HUAXINYU': '王华新雨', 'LI_CHENGHAI': '李成海', 'GUO_ZHENPENG': '郭振鹏'}
 ];
 language_map =
     [
         {'change_language': "切换至中文", 'page_title': "Wangpengroup Homepage", 'home': "Home", 'about': "About",
             'research': "Research", 'partners': "Partners", 'contact': "Contact", 'team': "Team", 'prof_name': "Peng Wang (KOBY)",
             'prof_title': "Prof. Peng Wang", 'about_me': "About Me", 'about_more': "Learn More",
-            'intro_1': "Professor of Mathematics, School of Mathematics and System Science, Beihang University", 'intro_2': "\“Thousand Talents Program\” Recipient", 'view_cv': "View My CV",
+            'intro_1': "Professor of Mathematics, School of Mathematics and System Science, Beihang University", 'view_cv': "View My CV",
             'full_intro': "I am computational mathematician working on uncertainty quantification. We combines mathematical theory and state-of-the-art computational tools to solve scientific and engineering problems with domain scientists.",
             "background": "Background", 'education': "Education", 'employment': "Employment", 'position': "Position",
             'projects': "Projects", 'subjects': "Subjects", 'goal': "Our goal is to develop mathematical tools to quantify uncertainty in nature, engineering systems and our society, and thus provide more accurate and comprehensive predictions of these system states. Applications of our work include environmental protection (flood prediction), ecology (algae blooms), oil recovery and renewable energy systems.",
@@ -21,7 +23,7 @@ language_map =
             'uq': "Uncertainty Quantification", 'pm': "Porous Media Analysis", 'ee': "Environment & Energy",
             'gs': "Graduates", 'us': "Undergraduates", 'as': "Alumni", 'scholar': "Google Scholar", 'videos': "Videos", 'seafile': "Seafile Drive",
         },
-        {'change_language': "English Version", 'page_title': "王鹏教授的实验室主页", 'home': "主页", 'about': "关于", 'research': "科研", 'partners': "合作", 'contact': "联系我们", 'team': "成员", 'prof_name': "王鹏 教授", 'prof_title': "王鹏 教授", 'about_me': "关于我", 'about_more': "了解更多", 'intro_1': "北京航空航天大学 数学与系统科学学院 教授", 'intro_2': "中组部“青年千人计划”专家", 'view_cv': "查看我的简历", "full_intro":
+        {'change_language': "English Version", 'page_title': "王鹏教授的实验室主页", 'home': "主页", 'about': "关于", 'research': "科研", 'partners': "合作", 'contact': "联系我们", 'team': "成员", 'prof_name': "王鹏 教授", 'prof_title': "王鹏 教授", 'about_me': "关于我", 'about_more': "了解更多", 'intro_1': "北京航空航天大学 数学与科学学院 教授", 'view_cv': "查看我的简历", "full_intro":
             "我是一名研究不确定性量化的计算数学学者。我们团队致力于结合数学理论与高效计算方法，与具体行业的科学家共同解决实际的自然和工程问题。我们的研究核心是开发数学工具以量化自然、工程和社会系统中的不确定性，进而对这些系统状态做出更准确与全面的预测。我们研究的具体应用包含环境保护（洪水预测）、生态平衡（水华爆发）、石油开采和新能源系统。", "background": "背景资料", 'education': "教育资料", 'employment': "工作经历", 'position': "其他任职", 'projects': "项目", 'subjects': "方向", 'goal':
             "我们的研究核心是开发数学工具以量化自然、工程和社会系统中的不确定性，进而对这些系统状态做出更准确与全面的预测。我们研究的具体应用包含环境保护（洪水预测）、生态平衡（水华爆发）、石油开采和新能源系统。", 'funding_info': "经费详情", 'fundings': "经费", 'details': "详情", 'resources': "资源", 'publications': "发表论文", 'books': "书籍", 'codes': "代码", "contact_info": "联系方式", 'rights': "© 2019 Wangpengroup. 保留所有权利", 'banner_1_1': "我们研究", 'banner_1_2': "材料科学", 'banner_2_1': "我们解决", 'banner_2_2': "能源问题",
             'materials': "新材料", 'medicines': "制药",
@@ -138,7 +140,7 @@ $(window).scroll(function() {
     positionPasses(10 + scroll / 500);
 });
 
-$(window).ready(function() {
+$(document).ready(function() {
     currentImage = 1;
     setInterval(function () {
         for (var i = 0; i < $(".show_case").length; i++) {

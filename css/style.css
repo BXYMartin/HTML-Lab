@@ -4,9 +4,12 @@
 }
 .swiper-img > img {
     object-fit: cover;
-    width: 100%;
     height: 220px;
     display: block;
+    margin: 0 auto;
+}
+.swiper-img {
+    background-color: #fff;
 }
 .swiper-details {
     text-align: center;

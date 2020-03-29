@@ -91,8 +91,8 @@
 		</div>
     </div>
     <div class="col-md-4 show_div">
-        <img class="show_case" src='./images/irradiance.jpg'>
-        <img class="show_case" style="border: none;height: 300px;width: 300px;margin: 0 50px;display: none" src='./images/live_irradiance.gif'>
+        <img class="show_case" style="box-sizing: border-box;border: 5px solid white;border-radius: 150px;height: 300px;width: 300px" src='./images/live_irradiance.gif'>
+        <img class="show_case" style="height:300px;width:300px;display: none" src='./images/live_graph.gif'>
         
         <!--img class="show_case" src='./images/irradiance.jpg'-->
     </div>
@@ -102,7 +102,6 @@
                       <label class="wel"></label>
                       <h3 class="w3-head-left" data-lang="prof_name" style="color:#fff">Peng WANG (Koby)</h3>
                       <p data-lang="intro_1">Professor of Mathematics, School of Mathematics and System Science, Beihang University</p>
-                          <p data-lang="intro_2">“Thousand Talents Program” Recipient</p> 
                         <div class="show_icon_box">
                         <div class="col-md-4 show_icon">
                             <img src="./images/quantification.png" /><br>
@@ -278,13 +277,27 @@
 	<div class="w3-head-left">
 		<h3 data-lang="resources">Resources</h3>
         <ul class="g-nav-list">
-            <li class="selected"><span id="pubs" data-lang="publications">Publications</span></li>
+            <li class="selected"><span id="pubs" data-lang="publications">Journal Papers</span></li>
             <li><span id="jrls" data-lang="books">Books</span></li>
             <li><span id="cods" data-lang="codes">Codes</span></li>
             <li><span id="vdos" data-lang="videos">Videos</span></li>
         </ul>
     </div>
     <div>
+
+    <div class="reswidget jrlwidget">
+        <div>
+            <div class="datewidget">
+                <h3><span style="color: #0000ff;">2018</span></h3>
+            </div>
+            <div class="contentwidget">
+                <p><span class="pubheader"><strong><a style="color: #000000;" href="#" target="_Blank"> Introduction to Uncertainty Quantification </a></strong></span>&nbsp;<a href="http://www.wangpengroup.org/publications/#"><span style="color: #3366ff;"><em>pdf</em></span></a><br>
+                <span style="color: #333333;">* P. Wang and D. Xiu (2018)</span><br>
+                <span style="color: #3366ff;"><em>China Science Publishing & Media, 2019 (in Chinese)，ISBN：9787030594723 </em></span><br></p>
+            </div>
+        </div>
+        <hr>
+    </div>
 
     <div class="reswidget jrlwidget">
         <div>
@@ -301,16 +314,28 @@
         <hr>
     </div>
 
-    <div class="reswidget jrlwidget hidres">
+
+    <div class="reswidget codwidget">
         <div>
             <div class="datewidget">
-                <h3><span style="color: #0000ff;">2018</span></h3>
+                <h3><span style="color: #0000ff;">2020</span></h3>
             </div>
             <div class="contentwidget">
-                <p><span class="pubheader"><strong><a style="color: #000000;" href="http://www.sciencedirect.com/science/article/pii/S0021999117304710" target="_Blank"> Uncertainty quantification on macroscopic properties of random porous media</a></strong></span>&nbsp;<a href="http://www.wangpengroup.org/publications/#"><span style="color: #3366ff;"><em>pdf</em></span></a><br>
-                <span style="color: #333333;">P. Wang, H. Chen, X. Meng, X. Jiang, D. Xiu and X. Yang*&nbsp; (2018)</span><br>
-                <span style="color: #3366ff;"><em>Physical Review E, 2018, vol. 98, no. 3, pp. 033306.</em></span><br>
-                <span style="color: #333333;"> Keyword: uncertainty quantification, model uncertainty, Kalman filter, particle filter, subsurface</span></p>
+                <p><span class="pubheader"><strong><a style="color: #000000;" href="#" target="_Blank"> irradpy</a></strong></span>&nbsp;<a href="https://github.com/BXYMartin/Python-IrradPy"><span style="color: #3366ff;"><em>python</em></span></a><br>
+                <span style="color: #333333;"> IrradPy Python Package for solar irradiance modelling.</span></p>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <div class="reswidget codwidget">
+        <div>
+            <div class="datewidget">
+                <h3><span style="color: #0000ff;">2019</span></h3>
+            </div>
+            <div class="contentwidget">
+                <p><span class="pubheader"><strong><a style="color: #000000;" href="#" target="_Blank"> Bright-Sun CSD</a></strong></span>&nbsp;<a href="https://github.com/JamieMBright/csd-library"><span style="color: #3366ff;"><em>matlab</em></span></a><br>
+                <span style="color: #333333;"> Bright-Sun: A globally applicable 1-min irradiance clear-sky detection model.</span></p>
             </div>
         </div>
         <hr>
@@ -342,6 +367,21 @@
         <hr>
     </div>
 
+
+    <div class="reswidget pubwidget">
+        <div>
+            <div class="datewidget">
+                <h3><span style="color: #0000ff;">2020</span></h3>
+            </div>
+            <div class="contentwidget">
+                <p><span class="pubheader"><strong><a style="color: #000000;" href="https://www.sciencedirect.com/science/article/abs/pii/S0038092X20301894" target="_Blank"> irradpy: Python package for MERRA-2 download, extraction and usage for clear-sky irradiance modelling, Solar Energy, 2020, vol. 199, pp. 685-693. </a></strong></span>&nbsp;<a href="http://www.wangpengroup.org/publications/#"><span style="color: #3366ff;"><em>pdf</em></span></a><br>
+                <span style="color: #333333;">* J. Bright*, X. Bai, Y. Zhang, X. Sun, B. Acord and P. Wang (2020)</span><br>
+                <span style="color: #3366ff;"><em>Solar Energy, 2020, vol. 199, pp. 685-693</em></span><br>
+                <span style="color: #333333;"> Keyword: clear-sky detection, solar irradiance, irradpy</span></p>
+            </div>
+        </div>
+        <hr>
+    </div>
 
     <div class="reswidget pubwidget">
         <div>
@@ -644,21 +684,6 @@
                 </div>
                 <div class="swiper-details">
                     <h2><a href="details/template.html" class="globe_website">
-                            <span data-lang="BIAN_ZHENG">
-                                BIAN Zheng
-                            </span>
-                    <i class="fa fa-globe"></i></a>
-                    </h2>
-                </div>
-            </div>
-      </div>
-      <div class="swiper-slide">
-            <div class="overlay">
-                <div class="swiper-img">
-                    <img src="images/default.jpg">
-                </div>
-                <div class="swiper-details">
-                    <h2><a href="details/template.html" class="globe_website">
                             <span data-lang="CHEN_HUALI">
                                 CHEN Huali
                             </span>
@@ -667,21 +692,7 @@
                 </div>
             </div>
       </div>
-      <div class="swiper-slide">
-            <div class="overlay">
-                <div class="swiper-img">
-                    <img src="images/CHENG-Ming.jpg">
-                </div>
-                <div class="swiper-details">
-                    <h2><a href="details/template.html" class="globe_website">
-                            <span data-lang="CHENG_MING">
-                                CHENG Ming
-                            </span>
-                    <i class="fa fa-globe"></i></a>
-                    </h2>
-                </div>
-            </div>
-      </div>
+      
       <div class="swiper-slide">
             <div class="overlay">
                 <div class="swiper-img">
@@ -743,21 +754,6 @@
             </div>
       </div>
       <div class="swiper-slide">
-            <div class="overlay">
-                <div class="swiper-img">
-                    <img src="images/SHI-Xiaofeng.png">
-                </div>
-                <div class="swiper-details">
-                    <h2><a href="details/template.html" class="globe_website">
-                            <span data-lang="SHI_XIAOFENG">
-                                SHI Xiaofeng
-                            </span>
-                    <i class="fa fa-globe"></i></a>
-                    </h2>
-                </div>
-            </div>
-      </div>
-      <div class="swiper-slide">
         <div class="overlay">
             <div class="swiper-img">
                 <img src="images/FANG-Zehua.jpg">
@@ -783,6 +779,69 @@
   <div class="swiper-container us">
     <div class="swiper-wrapper">
       
+        <div class="swiper-slide">
+            <div class="overlay">
+                <div class="swiper-img">
+                    <img src="images/BAI-Xinyu.jpg">
+                </div>
+                <div class="swiper-details">
+                    <h2><a href="details/template.html" class="globe_website">
+                            <span data-lang="BAI_XINYU">
+                                BAI Xinyu
+                            </span>
+                    <i class="fa fa-globe"></i></a>
+                    </h2>
+                </div>
+            </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="overlay">
+            <div class="swiper-img">
+                <img src="images/default.jpg">
+            </div>
+            <div class="swiper-details">
+                <h2><a href="details/template.html" class="globe_website">
+                        <span data-lang="WANG_HUAXINYU">
+                            WANG Huaxinyu
+                        </span>
+                <i class="fa fa-globe"></i></a>
+                </h2>
+            </div>
+        </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="overlay">
+                <div class="swiper-img">
+                    <img src="images/default.jpg">
+                </div>
+                <div class="swiper-details">
+                    <h2><a href="details/template.html" class="globe_website">
+                            <span data-lang="LI_CHENGHAI">
+                                LI Chenghai
+                            </span>
+                    <i class="fa fa-globe"></i></a>
+                    </h2>
+                </div>
+            </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="overlay">
+                    <div class="swiper-img">
+                        <img src="images/default.jpg">
+                    </div>
+                    <div class="swiper-details">
+                        <h2><a href="details/template.html" class="globe_website">
+                                <span data-lang="GUO_ZHIPENG">
+                                    GUO Zhipeng
+                                </span>
+                        <i class="fa fa-globe"></i></a>
+                        </h2>
+                    </div>
+                </div>
+                </div>
         
         
     </div>
@@ -809,6 +868,23 @@
                     </div>
                 </div>
           </div>
+            
+        <div class="swiper-slide">
+            <div class="overlay">
+                <div class="swiper-img">
+                    <img src="images/alumni.png" alt=" " class="alumni" />
+                    <img src="images/default.jpg">
+                </div>
+                <div class="swiper-details">
+                    <h2><a href="details/template.html" class="globe_website">
+                            <span data-lang="BIAN_ZHENG">
+                                BIAN Zheng
+                            </span>
+                    <i class="fa fa-globe"></i></a>
+                    </h2>
+                </div>
+            </div>
+        </div>
           <div class="swiper-slide">
                 <div class="overlay">
                     <div class="swiper-img">
@@ -824,6 +900,39 @@
                         </h2>
                     </div>
                 </div>
+          </div>
+          
+        <div class="swiper-slide">
+            <div class="overlay">
+                <div class="swiper-img">
+                    <img src="images/alumni.png" alt=" " class="alumni" />
+                    <img src="images/SHI-Xiaofeng.png">
+                </div>
+                <div class="swiper-details">
+                    <h2><a href="details/template.html" class="globe_website">
+                            <span data-lang="SHI_XIAOFENG">
+                                SHI Xiaofeng
+                            </span>
+                    <i class="fa fa-globe"></i></a>
+                    </h2>
+                </div>
+            </div>
+        </div>
+          <div class="swiper-slide">
+            <div class="overlay">
+                <div class="swiper-img">
+                    <img src="images/alumni.png" alt=" " class="alumni" />
+                    <img src="images/CHENG-Ming.jpg">
+                </div>
+                <div class="swiper-details">
+                    <h2><a href="details/template.html" class="globe_website">
+                            <span data-lang="CHENG_MING">
+                                CHENG Ming
+                            </span>
+                    <i class="fa fa-globe"></i></a>
+                    </h2>
+                </div>
+            </div>
           </div>
           <div class="swiper-slide">
                 <div class="overlay">
@@ -857,6 +966,23 @@
                     </div>
                 </div>
           </div>
+          
+          <div class="swiper-slide">
+            <div class="overlay">
+                <div class="swiper-img">
+                    <img src="images/alumni.png" alt=" " class="alumni" />
+                    <img src="images/default.jpg">
+                </div>
+                <div class="swiper-details">
+                    <h2><a href="details/template.html" class="globe_website">
+                            <span data-lang="YE_YANAN">
+                                YE Yanan
+                            </span>
+                    <i class="fa fa-globe"></i></a>
+                    </h2>
+                </div>
+            </div>
+        </div>
 
         </div>
         <!-- Add Pagination -->
@@ -918,7 +1044,7 @@
 <script src="js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
 <script type="text/javascript">
-$(window).ready(function(){
+$(document).ready(function(){
     $('body').removeClass('loading');
 });
 </script>
